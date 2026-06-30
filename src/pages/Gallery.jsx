@@ -19,16 +19,16 @@ import storage7 from "@/assets/images/storage7.webp";
 const projects = [
   { id: 1, cat: "Kitchens", title: "Custom Walnut Island Kitchen", desc: "Full kitchen remodel featuring custom walnut island, white perimeter cabinets, plywood construction, and professional lacquer finish.", img: kitchen1, tags: ["Walnut", "White Paint", "Shaker Doors"] },
   { id: 2, cat: "Kitchens", title: "Luxury White Shaker Kitchen", desc: "White lacquer-painted custom kitchen with inset shaker doors, full-height upper cabinets, and custom organization inserts throughout.", img: kitchen2, tags: ["White Lacquer", "Shaker", "Full Height"] },
-  { id: 3, cat: "Bathrooms", title: "Master Bath Double Vanity", desc: "Custom double-sink vanity in warm oak with built-in linen tower and matching medicine cabinet surround.", img: storage1, tags: ["Oak Stain", "Double Sink", "Linen Tower"] },
-  { id: 4, cat: "Built-Ins", title: "Living Room Entertainment Wall", desc: "Floor-to-ceiling custom entertainment center with integrated TV alcove, component storage, and flanking bookshelves.", img: storage2, tags: ["Built-In", "Entertainment", "Floor-to-Ceiling"] },
-  { id: 5, cat: "Built-Ins", title: "Home Library Built-In", desc: "Custom floor-to-ceiling library wall with adjustable shelving, integrated ladder hardware, and matching base cabinets with closed storage.", img: storage3, tags: ["Library", "Built-In", "Ladder Track"] },
+  { id: 3, cat: "Drawers", title: "Custom Drawer Organizer", desc: "Tiered hardwood drawer organizer with dedicated slots for flatware, utensils, and kitchen tools-built to fit the drawer exactly.", img: storage1, tags: ["Drawer Insert", "Cutlery", "Custom Fit"] },
+  { id: 4, cat: "Pull-Out", title: "Pull-Out Spice Rack", desc: "Narrow pull-out spice storage that keeps oils, seasonings, and jars visible and within easy reach while maximizing tight cabinet space.", img: storage2, tags: ["Spice Pull-Out", "Cabinet Storage", "Organization"] },
+  { id: 5, cat: "Pull-Out", title: "Waste & Recycling Pull-Out", desc: "Concealed double-bin pull-out system integrated into base cabinetry for cleaner workflow and a clutter-free kitchen.", img: storage3, tags: ["Trash Pull-Out", "Recycling", "Concealed"] },
   { id: 6, cat: "Storage", title: "Kitchen Organization System", desc: "Custom pull-out spice racks, pot and pan dividers, deep drawer organizers, and specialty inserts throughout an entire kitchen.", img: storage4, tags: ["Pull-Outs", "Organization", "Inserts"] },
   { id: 7, cat: "Kitchens", title: "Craftsman Kitchen Remodel", desc: "Warm maple cabinetry with beaded inset doors, custom island with seating overhang, and integrated pantry storage.", img: kitchen3, tags: ["Maple", "Beaded Inset", "Island"] },
-  { id: 8, cat: "Storage", title: "Closet Organization System", desc: "Master closet built-in with custom hang zones, drawer banks, shoe shelving, and integrated LED lighting tracks.", img: storage5, tags: ["Closet", "Organization", "Custom"] },
-  { id: 9, cat: "Before & After", title: "Kitchen Transformation", desc: "Complete kitchen transformation from outdated cabinetry to custom all-wood construction with modern shaker doors and professional finishes.", img: storage7, tags: ["Before & After", "Transformation"] },
+  { id: 8, cat: "Storage", title: "Corner Cabinet Organizer", desc: "Swing-out corner cabinet storage with rotating trays that bring deep-cabinet contents into full view and easy access.", img: storage5, tags: ["Corner Storage", "Swing-Out", "Kitchen Organizer"] },
+  { id: 9, cat: "Before & After", title: "Kitchen Transformation", desc: "Complete kitchen transformation from outdated cabinetry to custom all-wood construction with modern shaker doors and professional finishes.", img: "https://media.base44.com/images/public/6a2c516b2e53d966d671587c/e94ded35b_generated_716697d4.png", tags: ["Before & After", "Transformation"] },
 ];
 
-const cats = ["All", "Kitchens", "Bathrooms", "Built-Ins", "Storage", "Before & After"];
+const cats = ["All", "Kitchens", "Drawers", "Pull-Out", "Storage", "Before & After"];
 
 export default function Gallery() {
   const [active, setActive] = useState("All");
@@ -90,14 +90,14 @@ export default function Gallery() {
           <div className="grid gap-5 md:grid-cols-2">
             <div>
               <div className="relative">
-                <img src={storage6} alt="Kitchen before custom cabinet renovation" className="h-80 w-full object-cover" />
+                <img src="https://media.base44.com/images/public/6a2c516b2e53d966d671587c/a2f24d572_generated_8448dae5.png" alt="Kitchen before custom cabinet renovation" className="h-80 w-full object-cover" />
                 <span className="absolute left-4 top-4 bg-[#2D241E] px-4 py-2 text-xs uppercase tracking-[0.2em] text-white">Before</span>
               </div>
               <p className="mt-4 text-sm text-muted-foreground">Original cabinetry before renovation</p>
             </div>
             <div>
               <div className="relative">
-                <img src={storage7} alt="Kitchen after custom cabinet renovation by Southern Accent Cabinetry" className="h-80 w-full object-cover" />
+                <img src="https://media.base44.com/images/public/6a2c516b2e53d966d671587c/e94ded35b_generated_716697d4.png" alt="Kitchen after custom cabinet renovation by Southern Accent Cabinetry" className="h-80 w-full object-cover" />
                 <span className="absolute left-4 top-4 bg-[#C8A977] px-4 py-2 text-xs uppercase tracking-[0.2em] text-[#2D241E]">After</span>
               </div>
               <p className="mt-4 text-sm text-muted-foreground">Completed custom all-wood cabinetry</p>
