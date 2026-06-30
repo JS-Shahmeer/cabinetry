@@ -1,15 +1,20 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import SectionHeader from "./SectionHeader";
+import kitchen1 from "@/assets/images/kitchen1.webp";
+import kitchen2 from "@/assets/images/kitchen2.webp";
+import kitchen3 from "@/assets/images/kitchen3.webp";
+import storage1 from "@/assets/images/storage1.webp";
+import storage2 from "@/assets/images/storage2.webp";
 
-export default function PortfolioGallery({ images }) {
+export default function PortfolioGallery() {
   const [active, setActive] = useState(null);
   const projects = [
-    ["Luxury Kitchens", "Walnut island, all-wood construction, premium finish.", images.kitchen, "md:row-span-2"],
-    ["Bathroom Vanities", "Tailored storage with refined materials.", images.bath, ""],
-    ["Built-Ins", "Architectural storage designed for the room.", images.builtIn, ""],
-    ["Entertainment Centers", "Handcrafted media cabinetry with clean integration.", images.entertainment, "md:col-span-2"],
-    ["Custom Storage", "Pull-outs, organizers, and specialty solutions.", images.storage, ""]
+    ["Luxury Kitchens", "Walnut island, all-wood construction, premium finish.", kitchen1, "md:row-span-2"],
+    ["Bathroom Vanities", "Tailored storage with refined materials.", storage1, ""],
+    ["Built-Ins", "Architectural storage designed for the room.", storage2, ""],
+    ["Entertainment Centers", "Handcrafted media cabinetry with clean integration.", kitchen2, "md:col-span-2"],
+    ["Custom Storage", "Pull-outs, organizers, and specialty solutions.", kitchen3, ""]
   ];
   return (
     <section id="portfolio" className="px-5 py-24 lg:px-8 lg:py-32">

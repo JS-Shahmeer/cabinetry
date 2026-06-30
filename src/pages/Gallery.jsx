@@ -5,18 +5,27 @@ import PageLayout from "@/components/shared/PageLayout";
 import PageHero from "@/components/shared/PageHero";
 import TrustBar from "@/components/shared/TrustBar";
 import ConsultationCTA from "@/components/shared/ConsultationCTA";
-import { IMG } from "@/components/lib/siteImages";
+import kitchen1 from "@/assets/images/kitchen1.webp";
+import kitchen2 from "@/assets/images/kitchen2.webp";
+import kitchen3 from "@/assets/images/kitchen3.webp";
+import storage1 from "@/assets/images/storage1.webp";
+import storage2 from "@/assets/images/storage2.webp";
+import storage3 from "@/assets/images/storage3.webp";
+import storage4 from "@/assets/images/storage4.webp";
+import storage5 from "@/assets/images/storage5.webp";
+import storage6 from "@/assets/images/storage6.webp";
+import storage7 from "@/assets/images/storage7.webp";
 
 const projects = [
-  { id: 1, cat: "Kitchens", title: "Custom Walnut Island Kitchen", desc: "Full kitchen remodel featuring custom walnut island, white perimeter cabinets, plywood construction, and professional lacquer finish.", img: IMG.kitchen, tags: ["Walnut", "White Paint", "Shaker Doors"] },
-  { id: 2, cat: "Kitchens", title: "Luxury White Shaker Kitchen", desc: "White lacquer-painted custom kitchen with inset shaker doors, full-height upper cabinets, and custom organization inserts throughout.", img: IMG.hero, tags: ["White Lacquer", "Shaker", "Full Height"] },
-  { id: 3, cat: "Bathrooms", title: "Master Bath Double Vanity", desc: "Custom double-sink vanity in warm oak with built-in linen tower and matching medicine cabinet surround.", img: IMG.bath, tags: ["Oak Stain", "Double Sink", "Linen Tower"] },
-  { id: 4, cat: "Built-Ins", title: "Living Room Entertainment Wall", desc: "Floor-to-ceiling custom entertainment center with integrated TV alcove, component storage, and flanking bookshelves.", img: IMG.entertainment, tags: ["Built-In", "Entertainment", "Floor-to-Ceiling"] },
-  { id: 5, cat: "Built-Ins", title: "Home Library Built-In", desc: "Custom floor-to-ceiling library wall with adjustable shelving, integrated ladder hardware, and matching base cabinets with closed storage.", img: IMG.builtIn, tags: ["Library", "Built-In", "Ladder Track"] },
-  { id: 6, cat: "Storage", title: "Kitchen Organization System", desc: "Custom pull-out spice racks, pot and pan dividers, deep drawer organizers, and specialty inserts throughout an entire kitchen.", img: IMG.storage, tags: ["Pull-Outs", "Organization", "Inserts"] },
-  { id: 7, cat: "Kitchens", title: "Craftsman Kitchen Remodel", desc: "Warm maple cabinetry with beaded inset doors, custom island with seating overhang, and integrated pantry storage.", img: IMG.cta, tags: ["Maple", "Beaded Inset", "Island"] },
-  { id: 8, cat: "Storage", title: "Closet Organization System", desc: "Master closet built-in with custom hang zones, drawer banks, shoe shelving, and integrated LED lighting tracks.", img: IMG.grain, tags: ["Closet", "Organization", "Custom"] },
-  { id: 9, cat: "Before & After", title: "Kitchen Transformation", desc: "Complete kitchen transformation from outdated cabinetry to custom all-wood construction with modern shaker doors and professional finishes.", img: IMG.after, tags: ["Before & After", "Transformation"] },
+  { id: 1, cat: "Kitchens", title: "Custom Walnut Island Kitchen", desc: "Full kitchen remodel featuring custom walnut island, white perimeter cabinets, plywood construction, and professional lacquer finish.", img: kitchen1, tags: ["Walnut", "White Paint", "Shaker Doors"] },
+  { id: 2, cat: "Kitchens", title: "Luxury White Shaker Kitchen", desc: "White lacquer-painted custom kitchen with inset shaker doors, full-height upper cabinets, and custom organization inserts throughout.", img: kitchen2, tags: ["White Lacquer", "Shaker", "Full Height"] },
+  { id: 3, cat: "Bathrooms", title: "Master Bath Double Vanity", desc: "Custom double-sink vanity in warm oak with built-in linen tower and matching medicine cabinet surround.", img: storage1, tags: ["Oak Stain", "Double Sink", "Linen Tower"] },
+  { id: 4, cat: "Built-Ins", title: "Living Room Entertainment Wall", desc: "Floor-to-ceiling custom entertainment center with integrated TV alcove, component storage, and flanking bookshelves.", img: storage2, tags: ["Built-In", "Entertainment", "Floor-to-Ceiling"] },
+  { id: 5, cat: "Built-Ins", title: "Home Library Built-In", desc: "Custom floor-to-ceiling library wall with adjustable shelving, integrated ladder hardware, and matching base cabinets with closed storage.", img: storage3, tags: ["Library", "Built-In", "Ladder Track"] },
+  { id: 6, cat: "Storage", title: "Kitchen Organization System", desc: "Custom pull-out spice racks, pot and pan dividers, deep drawer organizers, and specialty inserts throughout an entire kitchen.", img: storage4, tags: ["Pull-Outs", "Organization", "Inserts"] },
+  { id: 7, cat: "Kitchens", title: "Craftsman Kitchen Remodel", desc: "Warm maple cabinetry with beaded inset doors, custom island with seating overhang, and integrated pantry storage.", img: kitchen3, tags: ["Maple", "Beaded Inset", "Island"] },
+  { id: 8, cat: "Storage", title: "Closet Organization System", desc: "Master closet built-in with custom hang zones, drawer banks, shoe shelving, and integrated LED lighting tracks.", img: storage5, tags: ["Closet", "Organization", "Custom"] },
+  { id: 9, cat: "Before & After", title: "Kitchen Transformation", desc: "Complete kitchen transformation from outdated cabinetry to custom all-wood construction with modern shaker doors and professional finishes.", img: storage7, tags: ["Before & After", "Transformation"] },
 ];
 
 const cats = ["All", "Kitchens", "Bathrooms", "Built-Ins", "Storage", "Before & After"];
@@ -33,7 +42,7 @@ export default function Gallery() {
         eyebrow="Project Gallery"
         title="Custom Cabinetry Projects Across the CSRA"
         subtitle="Browse completed kitchen, bathroom, built-in, and storage projects—each one built with all-wood construction and finished to last for decades."
-        image={IMG.entertainment}
+        image={kitchen2}
         cta={false}
       />
       <TrustBar />
@@ -81,14 +90,14 @@ export default function Gallery() {
           <div className="grid gap-5 md:grid-cols-2">
             <div>
               <div className="relative">
-                <img src={IMG.before} alt="Kitchen before custom cabinet renovation" className="h-80 w-full object-cover" />
+                <img src={storage6} alt="Kitchen before custom cabinet renovation" className="h-80 w-full object-cover" />
                 <span className="absolute left-4 top-4 bg-[#2D241E] px-4 py-2 text-xs uppercase tracking-[0.2em] text-white">Before</span>
               </div>
               <p className="mt-4 text-sm text-muted-foreground">Original cabinetry before renovation</p>
             </div>
             <div>
               <div className="relative">
-                <img src={IMG.after} alt="Kitchen after custom cabinet renovation by Southern Accent Cabinetry" className="h-80 w-full object-cover" />
+                <img src={storage7} alt="Kitchen after custom cabinet renovation by Southern Accent Cabinetry" className="h-80 w-full object-cover" />
                 <span className="absolute left-4 top-4 bg-[#C8A977] px-4 py-2 text-xs uppercase tracking-[0.2em] text-[#2D241E]">After</span>
               </div>
               <p className="mt-4 text-sm text-muted-foreground">Completed custom all-wood cabinetry</p>

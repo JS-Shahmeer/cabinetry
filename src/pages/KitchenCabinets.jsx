@@ -5,7 +5,12 @@ import PageHero from "@/components/shared/PageHero";
 import TrustBar from "@/components/shared/TrustBar";
 import ConsultationCTA from "@/components/shared/ConsultationCTA";
 import InlineTestimonial from "@/components/shared/InlineTestimonial";
-import { IMG } from "@/components/lib/siteImages";
+import kitchen1 from "@/assets/images/kitchen1.webp";
+import kitchen2 from "@/assets/images/kitchen2.webp";
+import kitchen3 from "@/assets/images/kitchen3.webp";
+import storage1 from "@/assets/images/storage1.webp";
+import storage2 from "@/assets/images/storage2.webp";
+import storage3 from "@/assets/images/storage3.webp";
 
 const styles = [
   { name: "Shaker", desc: "Clean recessed panel doors. Timeless in both traditional and modern kitchens." },
@@ -37,7 +42,7 @@ export default function KitchenCabinets() {
         eyebrow="Custom Kitchen Cabinets · North Augusta, SC"
         title="Custom Kitchen Cabinets Built for Your Home"
         subtitle="Precision-crafted all-wood kitchen cabinetry designed around your kitchen's exact dimensions, your family's storage needs, and your personal style."
-        image={IMG.kitchen}
+        image={kitchen1}
       />
       <TrustBar />
 
@@ -55,7 +60,7 @@ export default function KitchenCabinets() {
               ))}
             </div>
           </div>
-          <img src={IMG.kitchen} alt="Luxury custom kitchen cabinets by Southern Accent Cabinetry" className="h-[500px] w-full object-cover" />
+          <img src={kitchen2} alt="Luxury custom kitchen cabinets by Southern Accent Cabinetry" className="h-[500px] w-full object-cover" />
         </div>
       </section>
 
@@ -115,7 +120,7 @@ export default function KitchenCabinets() {
               ))}
             </div>
           </div>
-          <img src={IMG.storage} alt="Custom kitchen storage solutions by Southern Accent Cabinetry" className="h-[480px] w-full object-cover" />
+          <img src={storage1} alt="Custom kitchen storage solutions by Southern Accent Cabinetry" className="h-[480px] w-full object-cover" />
         </div>
       </section>
 
@@ -130,7 +135,7 @@ export default function KitchenCabinets() {
             <Link to="/gallery" className="hidden text-sm text-[#8C6A43] hover:text-primary md:block">Full gallery →</Link>
           </div>
           <div className="grid gap-5 md:grid-cols-3">
-            {[IMG.kitchen, IMG.grain, IMG.cta].map((img, i) => (
+            {[kitchen3, storage2, storage3].map((img, i) => (
               <div key={i} className="group relative overflow-hidden">
                 <img src={img} alt={`Custom kitchen cabinet project ${i + 1}`} className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />

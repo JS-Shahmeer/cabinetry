@@ -1,14 +1,20 @@
 import { ArrowUpRight } from "lucide-react";
 import SectionHeader from "./SectionHeader";
+import kitchen1 from "@/assets/images/kitchen1.webp";
+import storage1 from "@/assets/images/storage1.webp";
+import storage2 from "@/assets/images/storage2.webp";
+import kitchen2 from "@/assets/images/kitchen2.webp";
+import kitchen3 from "@/assets/images/kitchen3.webp";
+import storage3 from "@/assets/images/storage3.webp";
 
-export default function ServicesSection({ images }) {
+export default function ServicesSection() {
   const services = [
-    ["Custom Kitchens", "Luxury kitchen cabinetry tailored to each home.", images.kitchen],
-    ["Bathroom Vanities", "Beautiful and functional custom bath cabinetry.", images.bath],
-    ["Built-In Cabinets", "Custom storage solutions for any room.", images.builtIn],
-    ["Entertainment Centers", "Handcrafted media and entertainment cabinetry.", images.entertainment],
-    ["Specialty Storage", "Pull-outs, organizers, spice racks, and drawer inserts.", images.storage],
-    ["Residential & Commercial", "Custom cabinetry solutions for refined spaces.", images.grain]
+    ["Custom Kitchens", "Luxury kitchen cabinetry tailored to each home.", kitchen1],
+    ["Bathroom Vanities", "Beautiful and functional custom bath cabinetry.", storage1],
+    ["Built-In Cabinets", "Custom storage solutions for any room.", storage2],
+    ["Entertainment Centers", "Handcrafted media and entertainment cabinetry.", kitchen2],
+    ["Specialty Storage", "Pull-outs, organizers, spice racks, and drawer inserts.", kitchen3],
+    ["Residential & Commercial", "Custom cabinetry solutions for refined spaces.", storage3]
   ];
   return (
     <section id="services" className="bg-white px-5 py-24 lg:px-8 lg:py-32">

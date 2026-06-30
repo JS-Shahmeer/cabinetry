@@ -6,13 +6,20 @@ import TrustBar from "@/components/shared/TrustBar";
 import ConsultationCTA from "@/components/shared/ConsultationCTA";
 import InlineTestimonial from "@/components/shared/InlineTestimonial";
 import { IMG } from "@/components/lib/siteImages";
+import storage1 from "@/assets/images/storage1.webp";
+import storage2 from "@/assets/images/storage2.webp";
+import storage3 from "@/assets/images/storage3.webp";
+import storage4 from "@/assets/images/storage4.webp";
+import storage5 from "@/assets/images/storage5.webp";
+import storage6 from "@/assets/images/storage6.webp";
+import storage7 from "@/assets/images/storage7.webp";
 
 const categories = [
-  { title: "Entertainment Centers", desc: "Custom media walls built around your technology—TV alcoves, component storage, cable management, and decorative display niches in one seamless unit.", img: IMG.entertainment, features: ["TV alcove built to exact screen size", "Ventilated component storage", "Integrated cable management", "Display niches and shelving", "Matching surrounding cabinetry"] },
-  { title: "Home Office Built-Ins", desc: "A built-in home office transforms a spare room or awkward nook into a productive, organized workspace that feels permanent and intentional.", img: IMG.builtIn, features: ["Built-in desk at custom height", "Overhead upper cabinets", "File drawer bases", "Floor-to-ceiling bookcase walls", "Integrated lighting pocket opportunities"] },
-  { title: "Mudrooms & Entry Storage", desc: "A custom mudroom keeps every household member organized at the point of entry—lockers, benches, hooks, cubbies, and shoe storage built to your family's needs.", img: IMG.storage, features: ["Individual family lockers", "Built-in bench with base storage", "Cubby systems for shoes and bags", "Upper cabinet storage", "Hook rail integration"] },
-  { title: "Libraries & Bookshelves", desc: "Floor-to-ceiling library walls with integrated ladder tracks, reading nooks, and display shelving that make a bold architectural statement.", img: IMG.builtIn, features: ["Floor-to-ceiling shelf runs", "Integrated ladder track hardware", "Adjustable shelf spacing", "Decorative crown and base trim", "Mixed open and closed storage"] },
-  { title: "Closets & Organization", desc: "Custom closet systems with dedicated zones for hanging, folding, shoes, and accessories—designed around your wardrobe, not a generic plan.", img: IMG.storage, features: ["Double and single hang zones", "Custom drawer banks", "Shoe shelving systems", "Accessory drawers and trays", "Island or center console options"] },
+  { title: "Entertainment Centers", desc: "Custom media walls built around your technology—TV alcoves, component storage, cable management, and decorative display niches in one seamless unit.", img: storage2, features: ["TV alcove built to exact screen size", "Ventilated component storage", "Integrated cable management", "Display niches and shelving", "Matching surrounding cabinetry"] },
+  { title: "Home Office Built-Ins", desc: "A built-in home office transforms a spare room or awkward nook into a productive, organized workspace that feels permanent and intentional.", img: storage3, features: ["Built-in desk at custom height", "Overhead upper cabinets", "File drawer bases", "Floor-to-ceiling bookcase walls", "Integrated lighting pocket opportunities"] },
+  { title: "Mudrooms & Entry Storage", desc: "A custom mudroom keeps every household member organized at the point of entry—lockers, benches, hooks, cubbies, and shoe storage built to your family's needs.", img: storage4, features: ["Individual family lockers", "Built-in bench with base storage", "Cubby systems for shoes and bags", "Upper cabinet storage", "Hook rail integration"] },
+  { title: "Libraries & Bookshelves", desc: "Floor-to-ceiling library walls with integrated ladder tracks, reading nooks, and display shelving that make a bold architectural statement.", img: storage5, features: ["Floor-to-ceiling shelf runs", "Integrated ladder track hardware", "Adjustable shelf spacing", "Decorative crown and base trim", "Mixed open and closed storage"] },
+  { title: "Closets & Organization", desc: "Custom closet systems with dedicated zones for hanging, folding, shoes, and accessories—designed around your wardrobe, not a generic plan.", img: storage6, features: ["Double and single hang zones", "Custom drawer banks", "Shoe shelving systems", "Accessory drawers and trays", "Island or center console options"] },
 ];
 
 export default function BuiltIns() {
@@ -40,7 +47,7 @@ export default function BuiltIns() {
               ))}
             </div>
           </div>
-          <img src={IMG.builtIn} alt="Custom built-in cabinetry by Southern Accent Cabinetry" className="h-[500px] w-full object-cover" />
+          <img src={storage1} alt="Custom built-in cabinetry by Southern Accent Cabinetry" className="h-[500px] w-full object-cover" />
         </div>
       </section>
 
@@ -86,7 +93,7 @@ export default function BuiltIns() {
           <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Project gallery</p>
           <h2 className="mb-12 font-display text-4xl leading-tight text-primary md:text-5xl">Built-In Projects</h2>
           <div className="grid gap-5 md:grid-cols-3">
-            {[IMG.builtIn, IMG.entertainment, IMG.storage].map((img, i) => (
+            {[storage5, storage6, storage7].map((img, i) => (
               <div key={i} className="group overflow-hidden">
                 <img src={img} alt={`Custom built-in project ${i + 1}`} className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
               </div>
