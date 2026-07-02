@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Check } from "lucide-react";
+import { Check, ChevronDown, ChevronUp } from "lucide-react";
 import PageLayout from "@/components/shared/PageLayout";
 import PageHero from "@/components/shared/PageHero";
 import TrustBar from "@/components/shared/TrustBar";
@@ -34,6 +35,35 @@ const storage = [
   "Deep drawer base cabinets", "Pull-out shelf inserts", "Pot and pan dividers", "Spice pull-outs", "Lazy Susan corner storage",
   "Waste and recycling pull-outs", "Silverware tray inserts", "Drawer organizer inserts", "Blind corner solutions", "Pantry pull-out systems",
 ];
+
+const faqs = [
+  ["How long does a full kitchen cabinet project take?", "Most full kitchen cabinet projects take between six and ten weeks from final design approval to installation, depending on the scope of the layout and our current shop schedule. Smaller updates, like replacing an island or adding a pantry wall, typically move faster."],
+  ["Can you match new cabinets to existing trim or flooring?", "Yes. We'll look at your existing trim, flooring, and any cabinetry you're keeping during the consultation and design around it, so the new cabinets feel like they belong rather than standing out."],
+  ["Do you handle demolition and removal of old cabinets?", "We do. Our crew handles removal of your existing cabinets as part of the installation process, so you're not coordinating a separate demolition crew or hauling anything out yourself."],
+  ["What is the difference between painted and stained cabinets?", "Stained cabinets show the natural wood grain underneath a clear or tinted finish, while painted cabinets are finished in a solid opaque color that hides the grain entirely. Painted finishes tend to work well in more modern kitchens, while stained finishes lean traditional, though plenty of kitchens mix both on different cabinet runs."],
+];
+
+const relatedHardware = [
+  "Cabinet knobs and pulls",
+  "Soft close hinges",
+  "Full extension drawer slides",
+  "Drawer organizers",
+  "Pull-out storage systems",
+  "Corner cabinet solutions",
+];
+
+function FAQ({ q, a }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border-b border-border">
+      <button onClick={() => setOpen(!open)} className="flex w-full items-center justify-between py-6 text-left">
+        <span className="font-display text-xl text-primary">{q}</span>
+        {open ? <ChevronUp className="h-5 w-5 text-[#8C6A43]" /> : <ChevronDown className="h-5 w-5 text-[#8C6A43]" />}
+      </button>
+      {open && <p className="pb-6 leading-8 text-muted-foreground">{a}</p>}
+    </div>
+  );
+}
 
 export default function KitchenCabinets() {
   return (
@@ -148,11 +178,43 @@ export default function KitchenCabinets() {
         </div>
       </section>
 
+      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
+          <div>
+            <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Related hardware </p>
+            <h2 className="font-display text-4xl leading-tight text-primary md:text-5xl">Kitchen Hardware and Insert Upgrades</h2>
+            <p className="mt-5 text-lg leading-8 text-muted-foreground">Every kitchen project can include matched hardware and organization accessories, so finishes look intentional and storage works better from day one.</p>
+            <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              {relatedHardware.map((item) => (
+                <div key={item} className="flex items-center gap-3"><Check className="h-4 w-4 shrink-0 text-[#8C6A43]" /><span className="text-sm">{item}</span></div>
+              ))}
+            </div>
+          </div>
+          <div className="border-l-4 border-[#C8A977] bg-background p-7">
+            <h3 className="font-display text-3xl text-primary">Plan Hardware with Your Cabinets</h3>
+            <p className="mt-4 leading-7 text-muted-foreground">Browse available hardware and storage options and then finalize selections during your kitchen design process.</p>
+            <a href="http://www.hardwareresources.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block bg-primary px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-[#C8A977] hover:text-[#2D241E]">
+              View Hardware Options
+            </a>
+          </div>
+        </div>
+      </section>
+
       <div className="px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <InlineTestimonial quote="The storage solutions they designed eliminated every frustration we had with our old kitchen. Everything has a place and nothing is wasted." name="Kitchen Client, North Augusta, SC" />
         </div>
       </div>
+
+      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+        <div className="mx-auto max-w-4xl">
+          <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Common questions</p>
+          <h2 className="mb-12 font-display text-4xl leading-tight text-primary md:text-5xl">Kitchen Cabinet Questions</h2>
+          <div className="border-t border-border">
+            {faqs.map(([q, a]) => <FAQ key={q} q={q} a={a} />)}
+          </div>
+        </div>
+      </section>
 
       <ConsultationCTA headline="Ready to Design Your Custom Kitchen Cabinets?" sub="Tell us about your kitchen. We'll explore options, materials, and design ideas together in a free, no-pressure consultation." />
     </PageLayout>

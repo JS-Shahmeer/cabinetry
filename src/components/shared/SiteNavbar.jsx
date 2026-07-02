@@ -7,13 +7,16 @@ import logo from "@/assets/images/logo.png";
 const services = [
   { label: "Custom Cabinets", href: "/custom-cabinets" },
   { label: "Kitchen Cabinets", href: "/kitchen-cabinets" },
-  { label: "Bathroom Vanities", href: "/bathroom-vanities" },
-  { label: "Built-Ins & Storage", href: "/built-ins" },
+  { label: "Bathroom Cabinets", href: "/bathroom-cabinets" },
+  { label: "Built-In Cabinets", href: "/built-ins" },
+  { label: "Walk In Pantry Cabinets", href: "/walk-in-pantry-cabinets" },
+  { label: "Cabinet Inserts", href: "/cabinet-inserts" },
 ];
 
 const navLinks = [
   { label: "About", href: "/about" },
   { label: "Services", dropdown: services },
+  { label: "Hardware & Cabinet Inserts", href: "/hardware-cabinet-inserts" },
   { label: "Our Process", href: "/process" },
   { label: "Gallery", href: "/gallery" },
   { label: "Service Areas", href: "/service-areas" },
@@ -78,7 +81,7 @@ export default function SiteNavbar() {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled || !isHome ? "bg-[#2D241E] shadow-lg" : "bg-[#2D241E]/80 backdrop-blur-xl"} border-b border-white/10`}>
-      <nav className="mx-auto max-w-7xl px-5 lg:px-8">
+      <nav className="px-5 lg:px-8 max-w-[1600px] mx-auto">
         <div className="hidden py-2.5 items-center lg:grid lg:grid-cols-[1fr_auto_1fr]">
           <div className="flex items-center gap-6">
             {leftNav.map((item) => (

@@ -10,7 +10,7 @@ import { IMG } from "@/components/lib/siteImages";
 
 const rooms = [
   { title: "Kitchen Cabinets", desc: "Floor-to-ceiling storage, island bases, wall cabinets, and specialty inserts—all built custom to your kitchen's exact dimensions.", img: IMG.kitchen, href: "/kitchen-cabinets" },
-  { title: "Bathroom Vanities", desc: "Custom vanity cabinets, linen towers, and medicine cabinet surrounds designed for your bathroom's layout and storage needs.", img: IMG.bath, href: "/bathroom-vanities" },
+  { title: "Bathroom Cabinets", desc: "Custom vanity cabinets, linen towers, and medicine cabinet surrounds designed for your bathroom's layout and storage needs.", img: IMG.bath, href: "/bathroom-cabinets" },
   { title: "Laundry Room Cabinets", desc: "Functional laundry storage that keeps detergents, linens, and supplies organized with purpose-built cabinetry.", img: IMG.storage, href: "/built-ins" },
   { title: "Home Office Cabinets", desc: "Built-in desks, file storage, and bookcase walls that transform underused rooms into productive, organized work spaces.", img: IMG.builtIn, href: "/built-ins" },
   { title: "Built-In Storage", desc: "Floor-to-ceiling built-ins for living rooms, libraries, mudrooms, and closets—designed around how you live.", img: IMG.entertainment, href: "/built-ins" },
@@ -27,11 +27,19 @@ const materials = [
 ];
 
 const faqs = [
-  ["What is fully custom cabinetry?", "Fully custom means every cabinet is designed and built from scratch to your exact specifications—dimensions, wood species, finish, door style, and hardware. Nothing is pulled from a stock catalog."],
-  ["How long does a custom cabinet project take?", "Most projects take 4–8 weeks from approved design to installation, depending on scope and complexity. We'll give you a realistic timeline during your consultation."],
-  ["Do you use particle board?", "Never. All Southern Accent Cabinetry projects use plywood interiors and solid wood faces—no particle board, no shortcuts."],
-  ["What's included in the consultation?", "A free, no-pressure conversation about your project goals, space, style preferences, budget expectations, and timeline. You'll leave with a clear picture of your options."],
-  ["Do you handle installation?", "Yes. Our team handles delivery and professional installation. We don't hand off your project to a third party."],
+  ["What makes custom cabinets different from stock or semi custom?", "Stock cabinets come in fixed sizes and have to be adjusted to fit your space with fillers and gaps. Custom cabinets are built to your exact dimensions from the start, which means no wasted space, no mismatched fillers, and a layout designed specifically around how you use the room."],
+  ["Do you offer design consultations before I commit to a project?", "Yes, every project starts with a free, no pressure consultation where we talk through your space, your goals, and rough budget before any design work begins."],
+  ["Can you build cabinets for any room in the house?", "We build cabinetry for kitchens, bathrooms, pantries, mudrooms, home offices, closets, and built in storage throughout the house. If you have a space that needs custom storage, it's worth asking us even if it doesn't fall neatly into one category."],
+  ["What is the typical process from design to installation?", "After your initial consultation, we'll put together a design and materials plan for your approval, then move into fabrication in our shop. Once everything is built, our own crew handles installation, so the same team is involved from the first sketch to the final walkthrough."],
+];
+
+const relatedHardware = [
+  "Cabinet knobs and pulls",
+  "Soft close hinges",
+  "Full extension drawer slides",
+  "Drawer organizer systems",
+  "Pull-out storage options",
+  "Custom cabinet inserts",
 ];
 
 function FAQ({ q, a }) {
@@ -144,6 +152,28 @@ export default function CustomCabinets() {
           </div>
           <div className="mt-10">
             <Link to="/process" className="text-sm text-[#8C6A43] hover:text-primary transition-colors">See the full process →</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
+          <div>
+            <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Related hardware</p>
+            <h2 className="font-display text-4xl leading-tight text-primary md:text-5xl">Custom Cabinet Hardware and Insert Options</h2>
+            <p className="mt-5 text-lg leading-8 text-muted-foreground">Because every custom cabinet is built around your layout, we can also match hardware and interior accessories to the way you want each space to function.</p>
+            <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              {relatedHardware.map((item) => (
+                <div key={item} className="flex items-center gap-3"><Check className="h-4 w-4 shrink-0 text-[#8C6A43]" /><span className="text-sm">{item}</span></div>
+              ))}
+            </div>
+          </div>
+          <div className="border-l-4 border-[#C8A977] bg-background p-7">
+            <h3 className="font-display text-3xl text-primary">Coordinate Hardware During Design</h3>
+            <p className="mt-4 leading-7 text-muted-foreground">Review available hardware and organization systems so your cabinet build and accessory selections are planned together from the start.</p>
+            <a href="http://www.hardwareresources.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block bg-primary px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-[#C8A977] hover:text-[#2D241E]">
+              View Hardware Options
+            </a>
           </div>
         </div>
       </section>

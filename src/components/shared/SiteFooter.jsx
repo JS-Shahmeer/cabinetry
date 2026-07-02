@@ -1,19 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import logo from "@/assets/images/logo.png";
 
 const quickLinks = [
   { label: "About Us", href: "/about" },
   { label: "Custom Cabinets", href: "/custom-cabinets" },
   { label: "Kitchen Cabinets", href: "/kitchen-cabinets" },
-  { label: "Bathroom Vanities", href: "/bathroom-vanities" },
-  { label: "Built-Ins & Storage", href: "/built-ins" },
-  { label: "Our Process", href: "/process" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Testimonials", href: "/testimonials" },
-  { label: "Service Areas", href: "/service-areas" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Blog", href: "/blog" },
+  { label: "Bathroom Cabinets", href: "/bathroom-cabinets" },
+  { label: "Built In Cabinets", href: "/built-ins" },
+  { label: "Walk In Pantry Cabinets", href: "/walk-in-pantry-cabinets" },
+  { label: "Cabinet Inserts", href: "/cabinet-inserts" },
+  { label: "Hardware & Cabinet Inserts", href: "/hardware-cabinet-inserts" },
 ];
 
 export default function SiteFooter() {
@@ -22,9 +20,10 @@ export default function SiteFooter() {
     <footer className="bg-[#1A1A1A] px-5 py-8 md:py-10 text-white lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-display text-3xl text-white">Southern Accent</p>
-          <p className="text-[10px] uppercase tracking-[0.32em] text-[#C8A977]">Cabinetry</p>
-          <p className="mt-5 text-sm leading-7 text-white/60">Custom cabinetry, built-ins, entertainment centers, and premium woodworking built with all-wood integrity since 1984.</p>
+          <Link to="/" className="block text-center text-primary-foreground">
+            <img src={logo} alt="Southern Accent Cabinetry" className="h-24 w-auto object-contain" />
+          </Link>
+          <p className="mt-5 text-sm leading-7 text-white/60">Southern Accent Cabinetry -- Custom cabinetry, built ins, entertainment centers, and premium woodworking built with all wood integrity since 1984.</p>
           <Link to="/consultation" className="mt-6 inline-block bg-[#C8A977] px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#2D241E] hover:bg-white transition-colors">
             Request a Consultation
           </Link>
