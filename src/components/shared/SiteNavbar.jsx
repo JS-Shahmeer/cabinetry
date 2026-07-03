@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/images/logo.png";
 
 const services = [
-  { label: "Custom Cabinets", href: "/custom-cabinets" },
   { label: "Kitchen Cabinets", href: "/kitchen-cabinets" },
   { label: "Bathroom Cabinets", href: "/bathroom-cabinets" },
   { label: "Built-In Cabinets", href: "/built-ins" },
   { label: "Walk In Pantry Cabinets", href: "/walk-in-pantry-cabinets" },
   { label: "Cabinet Inserts", href: "/cabinet-inserts" },
+  { label: "Custom Cabinets", href: "/custom-cabinets" },
 ];
 
 const navLinks = [

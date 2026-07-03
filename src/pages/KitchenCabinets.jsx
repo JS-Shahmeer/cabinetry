@@ -6,6 +6,7 @@ import PageHero from "@/components/shared/PageHero";
 import TrustBar from "@/components/shared/TrustBar";
 import ConsultationCTA from "@/components/shared/ConsultationCTA";
 import InlineTestimonial from "@/components/shared/InlineTestimonial";
+import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import kitchen1 from "@/assets/images/kitchen1.webp";
 import kitchen2 from "@/assets/images/kitchen2.webp";
 import kitchen3 from "@/assets/images/kitchen3.webp";
@@ -43,13 +44,52 @@ const faqs = [
   ["What is the difference between painted and stained cabinets?", "Stained cabinets show the natural wood grain underneath a clear or tinted finish, while painted cabinets are finished in a solid opaque color that hides the grain entirely. Painted finishes tend to work well in more modern kitchens, while stained finishes lean traditional, though plenty of kitchens mix both on different cabinet runs."],
 ];
 
-const relatedHardware = [
-  "Cabinet knobs and pulls",
-  "Soft close hinges",
-  "Full extension drawer slides",
-  "Drawer organizers",
-  "Pull-out storage systems",
-  "Corner cabinet solutions",
+const featuredHardware = [
+  {
+    title: "Decorative Cabinet Knobs & Pulls",
+    description: "Modern, traditional and transitional finishes.",
+    image: kitchen2,
+    href: "https://www.hardwareresources.com/decorative-hardware/cabinet-knobs-pulls.html",
+    linkLabel: "Link to Decorative Hardware",
+  },
+  {
+    title: "Soft-Close Hinges",
+    description: "Smooth, quiet door operation.",
+    image: storage1,
+    href: "https://www.hardwareresources.com/functional-hardware/cabinet-hinges.html",
+    linkLabel: "Link to Cabinet Hinges",
+  },
+  {
+    title: "Premium Drawer Slides",
+    description: "Soft-close full-extension drawer systems.",
+    image: storage2,
+    href: "https://www.hardwareresources.com/dovetail-drawer-boxes",
+    linkLabel: "Link to Drawer Slides",
+  },
+  {
+    title: "Pull-Out Storage",
+    description: "Core kitchen organization categories supported by Hardware Resources.",
+    image: storage3,
+    bullets: ["Spice pull-outs", "Base cabinet pull-outs", "Waste container pull-outs"],
+    href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html",
+    linkLabel: "Link to Kitchen Organizers",
+  },
+  {
+    title: "Drawer Organization",
+    description: "Purpose-built organizer systems for everyday kitchen workflow.",
+    image: kitchen3,
+    bullets: ["Cutlery trays", "Utensil organizers", "Knife storage"],
+    href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html",
+    linkLabel: "Link to Drawer Organizers",
+  },
+  {
+    title: "Corner Cabinet Solutions",
+    description: "Maximize hard-to-reach corner zones with dedicated systems.",
+    image: kitchen1,
+    bullets: ["Lazy Susan", "CornerMax", "Blind corner organizers"],
+    href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html",
+    linkLabel: "Link to Corner Organizers",
+  },
 ];
 
 function FAQ({ q, a }) {
@@ -178,27 +218,12 @@ export default function KitchenCabinets() {
         </div>
       </section>
 
-      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
-          <div>
-            <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Related hardware </p>
-            <h2 className="font-display text-4xl leading-tight text-primary md:text-5xl">Kitchen Hardware and Insert Upgrades</h2>
-            <p className="mt-5 text-lg leading-8 text-muted-foreground">Every kitchen project can include matched hardware and organization accessories, so finishes look intentional and storage works better from day one.</p>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2">
-              {relatedHardware.map((item) => (
-                <div key={item} className="flex items-center gap-3"><Check className="h-4 w-4 shrink-0 text-[#8C6A43]" /><span className="text-sm">{item}</span></div>
-              ))}
-            </div>
-          </div>
-          <div className="border-l-4 border-[#C8A977] bg-background p-7">
-            <h3 className="font-display text-3xl text-primary">Plan Hardware with Your Cabinets</h3>
-            <p className="mt-4 leading-7 text-muted-foreground">Browse available hardware and storage options and then finalize selections during your kitchen design process.</p>
-            <a href="http://www.hardwareresources.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block bg-primary px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-[#C8A977] hover:text-[#2D241E]">
-              View Hardware Options
-            </a>
-          </div>
-        </div>
-      </section>
+      <HardwareCarouselSection
+        eyebrow="Featured products"
+        title="Kitchen Hardware and Organization"
+        intro="This page includes the largest hardware section, covering all core kitchen categories supported by Hardware Resources."
+        products={featuredHardware}
+      />
 
       <div className="px-5 py-14 lg:px-8">
         <div className="mx-auto max-w-3xl">

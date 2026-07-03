@@ -6,6 +6,7 @@ import PageHero from "@/components/shared/PageHero";
 import TrustBar from "@/components/shared/TrustBar";
 import ConsultationCTA from "@/components/shared/ConsultationCTA";
 import InlineTestimonial from "@/components/shared/InlineTestimonial";
+import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import cabinetInsertsHero from "@/assets/images/cabinetinserts1.png";
 import storage3 from "@/assets/images/storage3.webp";
 
@@ -43,13 +44,19 @@ const faqs = [
   ["How long does an insert installation take?", "Most insert projects are measured and installed within two to four weeks, depending on the number of cabinets involved and our current shop schedule. Smaller single cabinet updates can often move faster."],
 ];
 
-const relatedHardware = [
-  "Drawer organizers",
-  "Pull-out storage accessories",
-  "Soft close slide upgrades",
-  "Corner cabinet solutions",
-  "Pantry organization accessories",
-  "Closet and utility accessories",
+const featuredHardware = [
+  { title: "Drawer Inserts", description: "Built-to-fit inserts for cleaner drawer zoning and easier access.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
+  { title: "Cutlery Organizers", description: "Dedicated slots and dividers for daily flatware organization.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
+  { title: "Knife Blocks", description: "Safe, organized knife storage integrated into drawer layouts.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
+  { title: "Utensil Organizers", description: "Adjustable utensil organization for broad kitchen tool sets.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
+  { title: "Spice Organizers", description: "Spice drawer and pull-out systems for quick visibility and reach.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "Waste Container Systems", description: "Concealed waste and recycling pull-out systems for cleaner cabinet layouts.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/waste-container-organizers.html" },
+  { title: "Mixer Lift", description: "Heavy appliance lift systems that hide stand mixers when not in use.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "Roll-Out Shelves", description: "Smooth roll-out shelf upgrades for deep base cabinet access.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "Paper Towel Pull-Out", description: "Integrated paper towel storage and dispensing pull-out units.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "Cleaning Supply Organizer", description: "Under-sink and utility organizers for cleaning products and tools.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "CornerMax", description: "CornerMax systems that recover corner cabinetry storage efficiently.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/corner-organizers.html" },
+  { title: "Pantry Pull-Out", description: "Tall pull-out systems that support pantry-style organization in cabinet towers.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
 ];
 
 function FAQ({ q, a }) {
@@ -149,27 +156,12 @@ export default function CabinetInserts() {
         </div>
       </section>
 
-      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
-          <div>
-            <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Related hardware</p>
-            <h2 className="font-display text-4xl leading-tight text-primary md:text-5xl">Insert Hardware and Accessory Options</h2>
-            <p className="mt-5 text-lg leading-8 text-muted-foreground">Cabinet inserts perform best when paired with the right hardware and accessory systems, especially for deep drawers, pull-outs, and corner cabinetry.</p>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2">
-              {relatedHardware.map((item) => (
-                <div key={item} className="flex items-center gap-3"><Check className="h-4 w-4 shrink-0 text-[#8C6A43]" /><span className="text-sm">{item}</span></div>
-              ))}
-            </div>
-          </div>
-          <div className="border-l-4 border-[#C8A977] bg-background p-7">
-            <h3 className="font-display text-3xl text-primary">Choose Insert Upgrades by Use Case</h3>
-            <p className="mt-4 leading-7 text-muted-foreground">Compare hardware and organization options and choose what fits your cabinet layout and storage workflow.</p>
-            <a href="http://www.hardwareresources.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block bg-primary px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-[#C8A977] hover:text-[#2D241E]">
-              View Hardware Options
-            </a>
-          </div>
-        </div>
-      </section>
+      <HardwareCarouselSection
+        eyebrow="Featured products"
+        title="Cabinet Insert Hardware Collection"
+        intro="This is the strongest hardware page, with insert-focused options aligned to Hardware Resources kitchen organizer categories."
+        products={featuredHardware}
+      />
 
       <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
         <div className="mx-auto max-w-4xl">

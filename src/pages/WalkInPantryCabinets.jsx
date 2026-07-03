@@ -6,6 +6,7 @@ import PageHero from "@/components/shared/PageHero";
 import TrustBar from "@/components/shared/TrustBar";
 import ConsultationCTA from "@/components/shared/ConsultationCTA";
 import InlineTestimonial from "@/components/shared/InlineTestimonial";
+import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import walkInPantry1 from "@/assets/images/walkinpantry1.png";
 import storage5 from "@/assets/images/storage5.webp";
 
@@ -92,13 +93,55 @@ const faqs = [
     ["How long does a pantry project take?", "Most pantry projects take between four and seven weeks from final design approval to installation, depending on the size of the room and complexity of the shelving system."],
 ];
 
-const relatedHardware = [
-    "Pantry organization accessories",
-    "Pull-out basket systems",
-    "Soft close hinges and slides",
-    "Cabinet inserts for zone storage",
-    "Corner cabinet solutions",
-    "Closet and utility accessories",
+const featuredHardware = [
+    {
+        title: "Pantry Pull-Outs",
+        description: "High-capacity pull-out systems for pantry zones and easy-access daily storage.",
+        image: walkInPantry1,
+        href: "https://www.hardwareresources.com/organizers",
+    },
+    {
+        title: "Roll-Out Shelves",
+        description: "Smooth roll-out shelves for deep pantry cabinets where visibility matters.",
+        image: storage5,
+        href: "https://www.hardwareresources.com/organizers",
+    },
+    {
+        title: "Wire Basket Systems",
+        description: "Ventilated wire basket options for produce, bulk items, and utility categories.",
+        image: walkInPantry1,
+        href: "https://www.hardwareresources.com/organizers",
+    },
+    {
+        title: "Drawer Organization",
+        description: "Dedicated organizer layouts for pantry drawers and prep-related storage tools.",
+        image: storage5,
+        href: "https://www.hardwareresources.com/organizers",
+    },
+    {
+        title: "Pull-Out Storage",
+        description: "Base and tall pull-out formats for easy reach and cleaner pantry workflow.",
+        image: walkInPantry1,
+        href: "https://www.hardwareresources.com/organizers",
+    },
+    {
+        title: "Lazy Susan",
+        description: "Rotating systems that recover corner pantry storage and improve access.",
+        image: storage5,
+        href: "https://www.hardwareresources.com/organizers",
+    },
+    {
+        title: "Storage Baskets",
+        description: "Basket-based organization for grouped goods and category-based pantry zones.",
+        image: walkInPantry1,
+        href: "https://www.hardwareresources.com/organizers",
+    },
+    {
+        title: "Pantry Accessories",
+        description: "Accessory systems that align with Hardware Resources pantry organizer categories.",
+        image: storage5,
+        href: "https://www.hardwareresources.com/organizers",
+    },
 ];
 
 function FAQ({ q, a }) {
@@ -213,27 +256,12 @@ export default function WalkInPantryCabinets() {
                 </div>
             </section>
 
-            <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
-                <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
-                    <div>
-                        <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Related hardware </p>
-                        <h2 className="font-display text-4xl leading-tight text-primary md:text-5xl">Pantry Hardware and Insert Options</h2>
-                        <p className="mt-5 text-lg leading-8 text-muted-foreground">Walk-in pantries perform best when cabinetry layout and hardware are planned together. Add-on systems improve access, visibility, and long term organization.</p>
-                        <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                            {relatedHardware.map((item) => (
-                                <div key={item} className="flex items-center gap-3"><Check className="h-4 w-4 shrink-0 text-[#8C6A43]" /><span className="text-sm">{item}</span></div>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="border-l-4 border-[#C8A977] bg-background p-7">
-                        <h3 className="font-display text-3xl text-primary">See Pantry-Focused Hardware Choices</h3>
-                        <p className="mt-4 leading-7 text-muted-foreground">Review available hardware and organization systems, then select what fits your pantry workflow during design planning.</p>
-                        <a href="http://www.hardwareresources.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block bg-primary px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-[#C8A977] hover:text-[#2D241E]">
-                            View Hardware Options
-                        </a>
-                    </div>
-                </div>
-            </section>
+            <HardwareCarouselSection
+                eyebrow="Featured products"
+                title="Pantry Organization Hardware"
+                intro="This page focuses almost entirely on organization products aligned with Hardware Resources pantry organizers and storage systems."
+                products={featuredHardware}
+            />
 
             {/* FAQ */}
             <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">

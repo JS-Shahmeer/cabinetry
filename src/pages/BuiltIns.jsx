@@ -6,6 +6,7 @@ import PageHero from "@/components/shared/PageHero";
 import TrustBar from "@/components/shared/TrustBar";
 import ConsultationCTA from "@/components/shared/ConsultationCTA";
 import InlineTestimonial from "@/components/shared/InlineTestimonial";
+import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import { IMG } from "@/components/lib/siteImages";
 import storage1 from "@/assets/images/storage1.webp";
 import storage2 from "@/assets/images/storage2.webp";
@@ -30,13 +31,43 @@ const faqs = [
   ["How long does a built in project typically take?", "Most built in projects take between five and nine weeks from final design approval to installation, depending on the size and complexity of the piece. Larger whole room built ins, like a full library wall, tend to run toward the longer end."],
 ];
 
-const relatedHardware = [
-  "Cabinet pulls and knobs",
-  "Soft close hinges",
-  "Full extension drawer slides",
-  "Media cable management accessories",
-  "Closet and utility accessories",
-  "Custom cabinet inserts",
+const featuredHardware = [
+  {
+    title: "Decorative Hardware",
+    description: "Cabinet pulls and knobs that complement built-ins in offices, libraries, and entertainment walls.",
+    image: storage2,
+    href: "https://www.hardwareresources.com/decorative-hardware",
+  },
+  {
+    title: "Shelf Supports",
+    description: "Structural shelf support options for display shelves and high-load built-in storage.",
+    image: storage5,
+    href: "https://www.hardwareresources.com/decorative-wood",
+  },
+  {
+    title: "Cabinet Lighting (Future)",
+    description: "Lighting-ready planning for future integrations in entertainment centers and custom libraries.",
+    image: storage7,
+    href: "https://www.hardwareresources.com/decorative-wood",
+  },
+  {
+    title: "Drawer Slides",
+    description: "Smooth, full-extension slide systems for desk bases, media storage, and utility drawers.",
+    image: storage3,
+    href: "https://www.hardwareresources.com/decorative-hardware",
+  },
+  {
+    title: "Hidden Hinges",
+    description: "Concealed hinge systems for clean built-in lines with reliable soft-close movement.",
+    image: storage1,
+    href: "https://www.hardwareresources.com/decorative-hardware",
+  },
+  {
+    title: "Decorative Wood & Mouldings",
+    description: "Profile and trim options that are especially relevant for custom built-ins and architectural detailing.",
+    image: storage4,
+    href: "https://www.hardwareresources.com/decorative-wood",
+  },
 ];
 
 function FAQ({ q, a }) {
@@ -135,27 +166,12 @@ export default function BuiltIns() {
         </div>
       </section>
 
-      <section className="px-5 py-24 lg:px-8 lg:py-32">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
-          <div>
-            <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Related hardware </p>
-            <h2 className="font-display text-4xl leading-tight text-primary md:text-5xl">Built In Hardware and Accessory Options</h2>
-            <p className="mt-5 text-lg leading-8 text-muted-foreground">For built-ins, the right hardware does more than finish the look. It improves access, durability, and long term usability in high-touch spaces.</p>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2">
-              {relatedHardware.map((item) => (
-                <div key={item} className="flex items-center gap-3"><Check className="h-4 w-4 shrink-0 text-[#8C6A43]" /><span className="text-sm">{item}</span></div>
-              ))}
-            </div>
-          </div>
-          <div className="border-l-4 border-[#C8A977] bg-background p-7">
-            <h3 className="font-display text-3xl text-primary">Coordinate Built-Ins and Hardware</h3>
-            <p className="mt-4 leading-7 text-muted-foreground">Compare available hardware and insert systems and choose options that match your built-in style and storage goals.</p>
-            <a href="http://www.hardwareresources.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block bg-primary px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-[#C8A977] hover:text-[#2D241E]">
-              View Hardware Options
-            </a>
-          </div>
-        </div>
-      </section>
+      <HardwareCarouselSection
+        eyebrow="Featured products"
+        title="Built-In Hardware and Trim Selections"
+        intro="Built-ins benefit from a mix of decorative hardware, concealed mechanics, and trim/moulding options for architectural finish quality."
+        products={featuredHardware}
+      />
 
       <section className="px-5 py-24 lg:px-8 lg:py-32">
         <div className="mx-auto max-w-4xl">

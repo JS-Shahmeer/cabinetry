@@ -6,6 +6,7 @@ import PageHero from "@/components/shared/PageHero";
 import TrustBar from "@/components/shared/TrustBar";
 import ConsultationCTA from "@/components/shared/ConsultationCTA";
 import InlineTestimonial from "@/components/shared/InlineTestimonial";
+import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import { IMG } from "@/components/lib/siteImages";
 
 const vanityStyles = [
@@ -24,13 +25,38 @@ const faqs = [
   ["How long does a custom bathroom cabinet project take?", "Most bathroom cabinetry projects take between four and eight weeks from final design approval to installation, depending on the complexity of the layout and our current shop schedule. We'll give you a firm timeline once your design and materials are locked in."],
 ];
 
-const relatedHardware = [
-  "Cabinet knobs and pulls",
-  "Soft close hinges",
-  "Drawer organizers",
-  "Under-sink insert systems",
-  "Pull-out hamper hardware",
-  "Medicine cabinet accessories",
+const featuredHardware = [
+  {
+    title: "Decorative Cabinet Hardware",
+    description: "Handles and knobs selected to match vanity style and finish direction.",
+    image: IMG.bath,
+    href: "https://www.hardwareresources.com/decorative-hardware",
+  },
+  {
+    title: "Bathroom Organizers",
+    description: "Keep vanity interiors cleaner and easier to use with dedicated storage accessories.",
+    image: IMG.storage,
+    bullets: ["Drawer organization", "Vanity organization", "Hair appliance storage"],
+    href: "https://www.hardwareresources.com/organizers/bathroom-organizers.html",
+  },
+  {
+    title: "Soft-Close Hinges",
+    description: "Quiet close movement for high-use bathroom cabinet doors.",
+    image: IMG.workshop,
+    href: "https://www.hardwareresources.com/decorative-hardware",
+  },
+  {
+    title: "Drawer Slides",
+    description: "Smooth slide performance for vanity drawers and storage pull-outs.",
+    image: IMG.grain,
+    href: "https://www.hardwareresources.com/organizers/bathroom-organizers.html",
+  },
+  {
+    title: "Vanity Accessories",
+    description: "Bathroom-focused accessory upgrades for day-to-day organization and convenience.",
+    image: IMG.bath,
+    href: "https://www.hardwareresources.com/organizers/bathroom-organizers.html",
+  },
 ];
 
 function FAQ({ q, a }) {
@@ -130,27 +156,12 @@ export default function BathroomCabinets() {
         </div>
       </section>
 
-      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
-          <div>
-            <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Related hardware </p>
-            <h2 className="font-display text-4xl leading-tight text-primary md:text-5xl">Bathroom Hardware and Storage Add-Ons</h2>
-            <p className="mt-5 text-lg leading-8 text-muted-foreground">Bathroom cabinetry can include integrated hardware and insert options that improve daily use while preserving a clean, cohesive look.</p>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2">
-              {relatedHardware.map((item) => (
-                <div key={item} className="flex items-center gap-3"><Check className="h-4 w-4 shrink-0 text-[#8C6A43]" /><span className="text-sm">{item}</span></div>
-              ))}
-            </div>
-          </div>
-          <div className="border-l-4 border-[#C8A977] bg-background p-7">
-            <h3 className="font-display text-3xl text-primary">Choose Finishes and Function Together</h3>
-            <p className="mt-4 leading-7 text-muted-foreground">See available hardware and organization options, then align everything with your vanity style and bathroom layout.</p>
-            <a href="http://www.hardwareresources.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block bg-primary px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-[#C8A977] hover:text-[#2D241E]">
-              View Hardware Options
-            </a>
-          </div>
-        </div>
-      </section>
+      <HardwareCarouselSection
+        eyebrow="Featured products"
+        title="Bathroom Hardware and Storage"
+        intro="Bathroom-related accessories only, focused on vanity organization, smooth hardware performance, and practical daily use."
+        products={featuredHardware}
+      />
 
       {/* FAQ */}
       <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">

@@ -20,60 +20,70 @@ const categories = [
     desc: "Decorative and functional cabinet knobs in timeless and modern profiles to match your cabinetry style.",
     image: kitchen1,
     cta: "View Options",
+    href: "https://www.hardwareresources.com/decorative-hardware/cabinet-knobs-pulls.html",
   },
   {
     title: "Cabinet Pulls",
     desc: "Premium pull styles and finishes selected to complement paint colors, wood tones, and overall kitchen design.",
     image: kitchen2,
     cta: "View Options",
+    href: "https://www.hardwareresources.com/decorative-hardware/cabinet-knobs-pulls.html",
   },
   {
     title: "Hinges",
     desc: "High performance hinge systems with smooth operation, soft close action, and long term durability.",
     image: storage1,
     cta: "Learn More",
+    href: "https://www.hardwareresources.com/functional-hardware/cabinet-hinges.html",
   },
   {
     title: "Drawer Slides",
     desc: "Full extension and soft close drawer slide options designed for heavy use and clean, reliable motion.",
     image: storage2,
     cta: "Learn More",
+    href: "https://www.hardwareresources.com/dovetail-drawer-boxes",
   },
   {
     title: "Drawer Organizers",
     desc: "Custom organizer inserts that keep utensils, tools, and daily essentials easy to see and easy to reach.",
     image: storage3,
     cta: "View Options",
+    href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html",
   },
   {
     title: "Pull-Out Storage",
     desc: "Base cabinet pull-outs that bring deep storage forward so nothing gets lost at the back of the cabinet.",
     image: storage4,
     cta: "View Options",
+    href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html",
   },
   {
     title: "Pantry Organization",
     desc: "Shelving and pull-out systems for pantry zones that stay organized around the way your family shops and cooks.",
     image: walkInPantry1,
     cta: "Learn More",
+    href: "https://www.hardwareresources.com/organizers",
   },
   {
     title: "Cabinet Inserts",
     desc: "Built-to-fit inserts for spices, trays, lids, and more, matched to your cabinet openings and layout.",
     image: storage5,
     cta: "Learn More",
+    href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html",
   },
   {
     title: "Corner Cabinet Solutions",
     desc: "Lazy susans and corner access solutions that recover storage from hard-to-use cabinet corners.",
     image: storage6,
     cta: "View Options",
+    href: "https://www.hardwareresources.com/organizers/cabinet-organizers/corner-organizers.html",
   },
   {
     title: "Closet & Utility Accessories",
     desc: "Accessory systems for closets, utility spaces, and mudrooms to create practical organization across the home.",
     image: storage7,
     cta: "Learn More",
+    href: "https://www.hardwareresources.com/decorative-wood",
   },
 ];
 
@@ -169,9 +179,14 @@ export default function HardwareCabinetInserts() {
                   <div className="mb-4 h-px w-10 bg-[#C8A977]" />
                   <h3 className="font-display text-2xl text-primary">{category.title}</h3>
                   <p className="mt-3 leading-7 text-muted-foreground">{category.desc}</p>
-                  <button className="mt-6 inline-block bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-[#C8A977] hover:text-[#2D241E]">
-                    {category.cta}
-                  </button>
+                  <a
+                    href={category.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-block bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-[#C8A977] hover:text-[#2D241E]"
+                  >
+                    Learn More
+                  </a>
                 </div>
               </article>
             ))}
