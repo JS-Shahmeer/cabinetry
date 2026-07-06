@@ -136,7 +136,7 @@ export default function BlogPost() {
         </div>
       </div>
 
-      <article className="mx-auto max-w-3xl px-5 py-16 lg:px-8 lg:py-24">
+      <article className="mx-auto max-w-3xl px-5 py-16 lg:px-8 lg:py-12">
         <Link to="/blog" className="mb-10 inline-flex items-center gap-2 text-sm text-[#8C6A43] hover:text-primary transition-colors">
           <ArrowLeft className="h-4 w-4" /> Back to the blog
         </Link>

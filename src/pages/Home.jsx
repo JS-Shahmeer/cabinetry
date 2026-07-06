@@ -6,10 +6,12 @@ import PortfolioGallery from "@/components/home/PortfolioGallery";
 import CraftsmanshipSection from "@/components/home/CraftmanshipSection";
 import BeforeAfterSection from "@/components/home/BeforeAfterSection";
 import ProcessSection from "@/components/home/ProcessSection";
+import HardwareCTASection from "@/components/home/HardwareCTASection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import FAQSection from "@/components/home/FAQSection";
 import ContactSection from "@/components/home/ContactSection";
 import SiteFooter from "@/components/shared/SiteFooter";
+import StickyConsultationCTA from "@/components/shared/StickyConsultationCTA";
 
 const images = {
   hero:          "https://media.base44.com/images/public/6a2c516b2e53d966d671587c/efc5448eb_generated_2800ab13.png",
@@ -36,10 +38,12 @@ export default function Home() {
       <ServicesSection images={images} />
       <BeforeAfterSection before={images.before} after={images.after} />
       <ProcessSection />
+      <HardwareCTASection />
       <TestimonialsSection />
       <FAQSection />
       <ContactSection image={images.cta} />
       <SiteFooter />
+      <StickyConsultationCTA />
     </main>
   );
 }

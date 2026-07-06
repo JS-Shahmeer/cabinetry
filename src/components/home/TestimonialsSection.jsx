@@ -9,7 +9,7 @@ const quotes = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="px-5 py-24 lg:px-8 lg:py-32">
+    <section className="px-5 py-12 lg:px-8 md:py-16">
       <div className="mx-auto max-w-7xl">
         <SectionHeader centered eyebrow="Testimonials" title="Trusted by Homeowners Who Value the Details" />
         <div className="mt-14 grid gap-6 md:grid-cols-3">

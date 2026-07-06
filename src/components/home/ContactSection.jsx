@@ -13,7 +13,7 @@ export default function ContactSection({ image }) {
     window.location.href = `mailto:southernaccentcabinetry@gmail.com?subject=Consultation Request&body=${body}`;
   };
   return (
-    <section id="contact" className="bg-primary px-5 py-24 text-primary-foreground lg:px-8 lg:py-32">
+    <section id="contact" className="bg-primary px-5 py-12 text-primary-foreground lg:px-8 md:py-16">
       <div className="mx-auto max-w-7xl">
         <div className="relative mb-16 overflow-hidden"><img src={image} alt="Premium cabinetry workshop materials and finished cabinet doors" className="h-[360px] w-full object-cover opacity-75" /><div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent" /><div className="absolute inset-0 flex items-center px-8 md:px-14"><SectionHeader inverse eyebrow="Request a consultation" title="Ready to Build Something Exceptional?" text="Let's create cabinetry that transforms your home and lasts for decades." /></div></div>
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">

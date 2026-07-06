@@ -4,7 +4,7 @@ const faqs = [["Do you offer free estimates?", "Yes. Call or send the form detai
 
 export default function FAQSection() {
   return (
-    <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+    <section className="bg-white px-5 py-12 lg:px-8 md:py-16">
       <div className="mx-auto max-w-5xl">
         <SectionHeader centered eyebrow="FAQ" title="Questions Homeowners Ask First" />
         <div className="mt-12 divide-y divide-border border-y border-border">

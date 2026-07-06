@@ -48,7 +48,7 @@ export default function Consultation() {
       <section className="relative bg-primary text-white">
         <img src={IMG.kitchen} alt="Custom kitchen cabinetry" className="absolute inset-0 h-full w-full object-cover opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#1A120D] to-[#2D241E]/80" />
-        <div className="relative mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-24">
+        <div className="relative mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-12">
           <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#C8A977]">No-pressure consultation</p>
           <h1 className="font-display text-5xl leading-tight text-white md:text-7xl max-w-3xl">Request a Consultation</h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/78">Tell us about your project. We'll listen, walk through your space, and give you honest guidance on design, materials, and timeline — no pressure, no obligation.</p>

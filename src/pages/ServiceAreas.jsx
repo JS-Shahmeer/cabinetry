@@ -27,7 +27,7 @@ export default function ServiceAreas() {
       <TrustBar />
 
       {/* Overview */}
-      <section className="px-5 py-24 lg:px-8 lg:py-32">
+      <section className="px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
           <div>
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Where we work</p>
@@ -47,7 +47,7 @@ export default function ServiceAreas() {
       </section>
 
       {/* Area Cards */}
-      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+      <section className="bg-white px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-3xl">
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Cities we serve</p>
@@ -74,7 +74,7 @@ export default function ServiceAreas() {
       </section>
 
       {/* Why local */}
-      <section className="bg-primary px-5 py-24 text-white lg:px-8 lg:py-32">
+      <section className="bg-primary px-5 py-12 text-white lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl grid gap-14 lg:grid-cols-2 items-center">
           <img src={IMG.workshop} alt="Local CSRA craftsman building custom cabinetry" className="h-[440px] w-full object-cover" />
           <div>

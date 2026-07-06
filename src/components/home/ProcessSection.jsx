@@ -5,7 +5,7 @@ const steps = [["01", "Consultation", "We listen to your goals, assess your spac
 
 export default function ProcessSection() {
   return (
-    <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+    <section className="bg-white px-5 py-12 lg:px-8 md:py-16">
       <div className="mx-auto max-w-7xl">
         <SectionHeader eyebrow="Process" title="A Clear Path from Vision to Installation" text="A refined, personal process that keeps your cabinetry project thoughtful, organized, and beautifully executed." />
         <div className="mt-16 grid gap-5 md:grid-cols-4">

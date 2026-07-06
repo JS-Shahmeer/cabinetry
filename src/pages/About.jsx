@@ -43,7 +43,7 @@ export default function About() {
       <TrustBar />
 
       {/* Our Story */}
-      <section className="px-5 py-24 lg:px-8 lg:py-32">
+      <section className="px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
           <div>
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Our story</p>
@@ -73,7 +73,7 @@ export default function About() {
       </div>
 
       {/* Craftsmanship Philosophy */}
-      <section className="px-5 py-24 lg:px-8 lg:py-32">
+      <section className="px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-3xl">
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Our philosophy</p>
@@ -93,7 +93,7 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-primary px-5 py-24 text-white lg:px-8 lg:py-32">
+      <section className="bg-primary px-5 py-12 text-white lg:px-8 md:py-16">
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2">
           <div>
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#C8A977]">Why homeowners choose us</p>
@@ -112,7 +112,7 @@ export default function About() {
       </section>
 
       {/* Quality Materials */}
-      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+      <section className="bg-white px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
           <img src={IMG.grain} alt="Premium plywood interior and solid wood cabinetry detail" className="h-[460px] w-full object-cover" />
           <div>
@@ -131,7 +131,7 @@ export default function About() {
       </section>
 
       {/* Meet the Team */}
-      <section className="px-5 py-24 lg:px-8 lg:py-32">
+      <section className="px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-3xl">
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">The team</p>
@@ -153,7 +153,7 @@ export default function About() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-primary px-5 py-24 text-white lg:px-8 lg:py-32">
+      <section className="bg-primary px-5 py-12 text-white lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#C8A977]">What homeowners say</p>
           <h2 className="mb-14 font-display text-4xl text-white md:text-5xl">Trusted by Families Across the CSRA</h2>

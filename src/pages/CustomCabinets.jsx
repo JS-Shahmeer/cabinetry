@@ -67,7 +67,7 @@ export default function CustomCabinets() {
       <TrustBar />
 
       {/* Intro */}
-      <section className="px-5 py-24 lg:px-8 lg:py-32">
+      <section className="px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
           <div>
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">What makes us different</p>
@@ -92,7 +92,7 @@ export default function CustomCabinets() {
       </div>
 
       {/* Room by room */}
-      <section className="px-5 py-24 lg:px-8 lg:py-32">
+      <section className="px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-3xl">
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">All rooms. All storage.</p>
@@ -117,7 +117,7 @@ export default function CustomCabinets() {
       </section>
 
       {/* Materials */}
-      <section className="bg-primary px-5 py-24 text-white lg:px-8 lg:py-32">
+      <section className="bg-primary px-5 py-12 text-white lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-3xl">
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#C8A977]">Materials & finishes</p>
@@ -135,7 +135,7 @@ export default function CustomCabinets() {
       </section>
 
       {/* Process */}
-      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+      <section className="bg-white px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-3xl">
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Our process</p>
@@ -156,7 +156,7 @@ export default function CustomCabinets() {
         </div>
       </section>
 
-      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+      <section className="bg-white px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
           <div>
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Related hardware</p>
@@ -179,7 +179,7 @@ export default function CustomCabinets() {
       </section>
 
       {/* FAQ */}
-      <section className="px-5 py-24 lg:px-8 lg:py-32">
+      <section className="px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Common questions</p>
           <h2 className="mb-12 font-display text-4xl leading-tight text-primary md:text-5xl">Questions About Custom Cabinetry</h2>

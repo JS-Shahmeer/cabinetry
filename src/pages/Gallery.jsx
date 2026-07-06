@@ -81,7 +81,7 @@ export default function Gallery() {
       </section>
 
       {/* Before & After */}
-      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+      <section className="bg-white px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-3xl">
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Before & after</p>

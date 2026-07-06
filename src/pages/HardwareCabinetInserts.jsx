@@ -110,7 +110,7 @@ export default function HardwareCabinetInserts() {
       />
       <TrustBar />
 
-      <section className="px-5 py-20 lg:px-8 lg:py-24">
+      {/* <section className="px-5 py-20 lg:px-8 lg:py-12">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
@@ -130,7 +130,7 @@ export default function HardwareCabinetInserts() {
         </div>
       </section>
 
-      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+      <section className="bg-white px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
           <div>
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Related hardware</p>
@@ -156,9 +156,9 @@ export default function HardwareCabinetInserts() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="bg-white px-5 py-24 lg:px-8 lg:py-32">
+      <section className="bg-white px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-3xl">
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Product categories</p>
@@ -167,34 +167,37 @@ export default function HardwareCabinetInserts() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {categories.map((category) => (
-              <article key={category.title} className="group overflow-hidden bg-background">
-                <div className="overflow-hidden">
-                  <img
-                    src={category.image}
-                    alt={category.title}
-                    className="h-60 w-full object-cover transition duration-700 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-7">
-                  <div className="mb-4 h-px w-10 bg-[#C8A977]" />
-                  <h3 className="font-display text-2xl text-primary">{category.title}</h3>
-                  <p className="mt-3 leading-7 text-muted-foreground">{category.desc}</p>
-                  <a
-                    href={category.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 inline-block bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-[#C8A977] hover:text-[#2D241E]"
-                  >
-                    Learn More
-                  </a>
-                </div>
-              </article>
+              <a
+                key={category.title}
+                href={category.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block overflow-hidden bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8C6A43] focus-visible:ring-offset-2"
+              >
+                <article>
+                  <div className="overflow-hidden">
+                    <img
+                      src={category.image}
+                      alt={category.title}
+                      className="h-60 w-full object-cover transition duration-700 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-7">
+                    <div className="mb-4 h-px w-10 bg-[#C8A977]" />
+                    <h3 className="font-display text-2xl text-primary">{category.title}</h3>
+                    <p className="mt-3 leading-7 text-muted-foreground">{category.desc}</p>
+                    <div className="mt-6 inline-block bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground transition-colors group-hover:bg-[#C8A977] group-hover:text-[#2D241E]">
+                      Learn More
+                    </div>
+                  </div>
+                </article>
+              </a>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-primary px-5 py-24 text-white lg:px-8 lg:py-32 text-center">
+      {/* <section className="bg-primary px-5 py-12 text-white lg:px-8 md:py-16 text-center">
         <div className="mx-auto max-w-7xl">
           <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#C8A977]">Why clients choose this approach</p>
           <h2 className="font-display text-4xl leading-tight text-white md:text-5xl">Hardware and Inserts Planned with the Cabinet Build</h2>
@@ -209,7 +212,7 @@ export default function HardwareCabinetInserts() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <ConsultationCTA
         headline="Need Help Choosing Hardware and Organization Upgrades?"

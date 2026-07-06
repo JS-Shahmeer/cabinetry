@@ -45,7 +45,7 @@ export default function Testimonials() {
       </div>
 
       {/* Reviews grid */}
-      <section className="px-5 py-24 lg:px-8 lg:py-32">
+      <section className="px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-14 max-w-3xl">
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Customer reviews</p>
@@ -70,7 +70,7 @@ export default function Testimonials() {
       </section>
 
       {/* Featured Projects */}
-      <section className="bg-primary px-5 py-24 text-white lg:px-8 lg:py-32">
+      <section className="bg-primary px-5 py-12 text-white lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#C8A977]">Featured projects</p>
           <h2 className="mb-14 font-display text-4xl text-white md:text-5xl">Projects Behind the Reviews</h2>

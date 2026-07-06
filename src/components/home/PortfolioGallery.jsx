@@ -13,11 +13,11 @@ export default function PortfolioGallery() {
     ["Luxury Kitchens", "Walnut island, all-wood construction, premium finish.", kitchen1, "md:row-span-2"],
     ["Bathroom Vanities", "Tailored storage with refined materials.", storage1, ""],
     ["Built-Ins", "Architectural storage designed for the room.", storage2, ""],
-    ["Entertainment Centers", "Handcrafted media cabinetry with clean integration.", kitchen2, "md:col-span-2"],
+    ["Entertainment Centers", "Handcrafted media cabinetry with clean integration.", kitchen2, ""],
     ["Custom Storage", "Pull-outs, organizers, and specialty solutions.", kitchen3, ""]
   ];
   return (
-    <section id="portfolio" className="px-5 py-24 lg:px-8 lg:py-32">
+    <section id="portfolio" className="px-5 py-12 lg:px-8 md:py-16">
       <div className="mx-auto max-w-7xl">
         <SectionHeader eyebrow="Featured work" title="A Portfolio Built for Luxury Homes" text="A photography-led look at kitchens, baths, built-ins, entertainment centers, and specialty storage solutions." />
         <div className="mt-14 grid auto-rows-[280px] gap-5 md:grid-cols-3">

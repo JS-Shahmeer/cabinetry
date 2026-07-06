@@ -5,7 +5,7 @@ const points = ["Family-owned feel", "40+ years experience", "Custom design proc
 
 export default function AboutSection({ image }) {
   return (
-    <section id="about" className="px-5 py-24 lg:px-8 lg:py-32">
+    <section id="about" className="px-5 py-12 lg:px-8 md:py-16">
       <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="relative">
           <img src={image} alt="Craftsman marking raw timber in a woodworking shop" className="h-[520px] w-full object-cover" />

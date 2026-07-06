@@ -64,7 +64,7 @@ export default function Process() {
       <TrustBar />
 
       {/* Overview */}
-      <section className="px-5 py-24 lg:px-8 lg:py-32">
+      <section className="px-5 py-12 lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 grid gap-14 lg:grid-cols-2 items-center">
             <div>
@@ -103,7 +103,7 @@ export default function Process() {
       </section>
 
       {/* Timeline expectations */}
-      <section className="bg-primary px-5 py-24 text-white lg:px-8 lg:py-32">
+      <section className="bg-primary px-5 py-12 text-white lg:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-3xl">
             <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#C8A977]">Timeline expectations</p>

@@ -16,7 +16,7 @@ const services = [
 const navLinks = [
   { label: "About", href: "/about" },
   { label: "Services", dropdown: services },
-  { label: "Hardware & Cabinet Inserts", href: "/hardware-cabinet-inserts" },
+  // { label: "Hardware & Cabinet Inserts", href: "/hardware-cabinet-inserts" },
   { label: "Our Process", href: "/process" },
   { label: "Gallery", href: "/gallery" },
   { label: "Service Areas", href: "/service-areas" },

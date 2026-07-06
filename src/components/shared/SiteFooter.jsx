@@ -11,7 +11,7 @@ const quickLinks = [
   { label: "Built In Cabinets", href: "/built-ins" },
   { label: "Walk In Pantry Cabinets", href: "/walk-in-pantry-cabinets" },
   { label: "Cabinet Inserts", href: "/cabinet-inserts" },
-  { label: "Hardware & Cabinet Inserts", href: "/hardware-cabinet-inserts" },
+  // { label: "Hardware & Cabinet Inserts", href: "/hardware-cabinet-inserts" },
 ];
 
 export default function SiteFooter() {
