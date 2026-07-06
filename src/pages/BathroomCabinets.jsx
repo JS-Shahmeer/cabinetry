@@ -8,6 +8,8 @@ import ConsultationCTA from "@/components/shared/ConsultationCTA";
 import InlineTestimonial from "@/components/shared/InlineTestimonial";
 import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import { IMG } from "@/components/lib/siteImages";
+import bathroomOrganizers from "@/assets/images/new-images/Bathroom-Cabinets_Bathroom-Organizers.webp";
+import bathroomDecorativeHardware from "@/assets/images/new-images/Bathroom-Cabinets_Decorative Hardware.webp";
 
 const vanityStyles = [
   { name: "Freestanding Vanity", desc: "A standalone vanity that functions as furniture. Ideal for larger bathrooms or master baths." },
@@ -29,32 +31,32 @@ const featuredHardware = [
   {
     title: "Decorative Cabinet Hardware",
     description: "Handles and knobs selected to match vanity style and finish direction.",
-    image: IMG.bath,
+    image: bathroomDecorativeHardware,
     href: "https://www.hardwareresources.com/decorative-hardware",
   },
   {
     title: "Bathroom Organizers",
     description: "Keep vanity interiors cleaner and easier to use with dedicated storage accessories.",
-    image: IMG.storage,
+    image: bathroomOrganizers,
     bullets: ["Drawer organization", "Vanity organization", "Hair appliance storage"],
     href: "https://www.hardwareresources.com/organizers/bathroom-organizers.html",
   },
   {
     title: "Soft-Close Hinges",
     description: "Quiet close movement for high-use bathroom cabinet doors.",
-    image: IMG.workshop,
+    image: bathroomDecorativeHardware,
     href: "https://www.hardwareresources.com/decorative-hardware",
   },
   {
     title: "Drawer Slides",
     description: "Smooth slide performance for vanity drawers and storage pull-outs.",
-    image: IMG.grain,
+    image: bathroomOrganizers,
     href: "https://www.hardwareresources.com/organizers/bathroom-organizers.html",
   },
   {
     title: "Vanity Accessories",
     description: "Bathroom-focused accessory upgrades for day-to-day organization and convenience.",
-    image: IMG.bath,
+    image: bathroomOrganizers,
     href: "https://www.hardwareresources.com/organizers/bathroom-organizers.html",
   },
 ];

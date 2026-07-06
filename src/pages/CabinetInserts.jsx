@@ -9,6 +9,10 @@ import InlineTestimonial from "@/components/shared/InlineTestimonial";
 import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import cabinetInsertsHero from "@/assets/images/cabinetinserts1.png";
 import storage3 from "@/assets/images/storage3.webp";
+import insertsCornerOrganizers from "@/assets/images/new-images/Cabinet-Inserts _Corner-Organizers.jpg";
+import insertsDrawerOrganizers from "@/assets/images/new-images/Cabinet-Inserts_Drawer-Organizers.png";
+import insertsKitchenOrganizers from "@/assets/images/new-images/Cabinet-Inserts_Kitchen-Organizers.PNG";
+import insertsWasteOrganizers from "@/assets/images/new-images/Cabinet-Inserts_Waste-Container-Organizers.jpg";
 
 const insertOptions = [
   {
@@ -45,18 +49,18 @@ const faqs = [
 ];
 
 const featuredHardware = [
-  { title: "Drawer Inserts", description: "Built-to-fit inserts for cleaner drawer zoning and easier access.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
-  { title: "Cutlery Organizers", description: "Dedicated slots and dividers for daily flatware organization.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
-  { title: "Knife Blocks", description: "Safe, organized knife storage integrated into drawer layouts.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
-  { title: "Utensil Organizers", description: "Adjustable utensil organization for broad kitchen tool sets.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
-  { title: "Spice Organizers", description: "Spice drawer and pull-out systems for quick visibility and reach.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
-  { title: "Waste Container Systems", description: "Concealed waste and recycling pull-out systems for cleaner cabinet layouts.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/waste-container-organizers.html" },
-  { title: "Mixer Lift", description: "Heavy appliance lift systems that hide stand mixers when not in use.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
-  { title: "Roll-Out Shelves", description: "Smooth roll-out shelf upgrades for deep base cabinet access.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
-  { title: "Paper Towel Pull-Out", description: "Integrated paper towel storage and dispensing pull-out units.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
-  { title: "Cleaning Supply Organizer", description: "Under-sink and utility organizers for cleaning products and tools.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
-  { title: "CornerMax", description: "CornerMax systems that recover corner cabinetry storage efficiently.", image: storage3, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/corner-organizers.html" },
-  { title: "Pantry Pull-Out", description: "Tall pull-out systems that support pantry-style organization in cabinet towers.", image: cabinetInsertsHero, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "Drawer Inserts", description: "Built-to-fit inserts for cleaner drawer zoning and easier access.", image: insertsDrawerOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
+  { title: "Cutlery Organizers", description: "Dedicated slots and dividers for daily flatware organization.", image: insertsDrawerOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
+  { title: "Knife Blocks", description: "Safe, organized knife storage integrated into drawer layouts.", image: insertsDrawerOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
+  { title: "Utensil Organizers", description: "Adjustable utensil organization for broad kitchen tool sets.", image: insertsDrawerOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/drawer-organizers.html" },
+  { title: "Spice Organizers", description: "Spice drawer and pull-out systems for quick visibility and reach.", image: insertsKitchenOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "Waste Container Systems", description: "Concealed waste and recycling pull-out systems for cleaner cabinet layouts.", image: insertsWasteOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/waste-container-organizers.html" },
+  { title: "Mixer Lift", description: "Heavy appliance lift systems that hide stand mixers when not in use.", image: insertsKitchenOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "Roll-Out Shelves", description: "Smooth roll-out shelf upgrades for deep base cabinet access.", image: insertsKitchenOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "Paper Towel Pull-Out", description: "Integrated paper towel storage and dispensing pull-out units.", image: insertsKitchenOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "Cleaning Supply Organizer", description: "Under-sink and utility organizers for cleaning products and tools.", image: insertsKitchenOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
+  { title: "CornerMax", description: "CornerMax systems that recover corner cabinetry storage efficiently.", image: insertsCornerOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers/corner-organizers.html" },
+  { title: "Pantry Pull-Out", description: "Tall pull-out systems that support pantry-style organization in cabinet towers.", image: insertsKitchenOrganizers, href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html" },
 ];
 
 function FAQ({ q, a }) {

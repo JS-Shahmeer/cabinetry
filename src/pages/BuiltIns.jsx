@@ -15,6 +15,8 @@ import storage4 from "@/assets/images/storage4.webp";
 import storage5 from "@/assets/images/storage5.webp";
 import storage6 from "@/assets/images/storage6.webp";
 import storage7 from "@/assets/images/storage7.webp";
+import builtInDecorativeWood from "@/assets/images/new-images/Built-In-Cabinets_Decorative-Wood-Moulding.webp";
+import builtInHardwareSupports from "@/assets/images/new-images/Built-In-Cabinets_Shelf-Supports-Decorative-Hardware.webp";
 
 const categories = [
   { title: "Entertainment Centers", desc: "Custom media walls built around your technology, TV alcoves, component storage, cable management, and decorative display niches in one cohesive unit.", img: storage2, features: ["TV alcove built to exact screen size", "Ventilated component storage", "Integrated cable management", "Display niches and shelving", "Matching surrounding cabinetry"] },
@@ -35,37 +37,37 @@ const featuredHardware = [
   {
     title: "Decorative Hardware",
     description: "Cabinet pulls and knobs that complement built-ins in offices, libraries, and entertainment walls.",
-    image: storage2,
+    image: builtInHardwareSupports,
     href: "https://www.hardwareresources.com/decorative-hardware",
   },
   {
     title: "Shelf Supports",
     description: "Structural shelf support options for display shelves and high-load built-in storage.",
-    image: storage5,
+    image: builtInHardwareSupports,
     href: "https://www.hardwareresources.com/decorative-wood",
   },
   {
     title: "Cabinet Lighting (Future)",
     description: "Lighting-ready planning for future integrations in entertainment centers and custom libraries.",
-    image: storage7,
+    image: builtInDecorativeWood,
     href: "https://www.hardwareresources.com/decorative-wood",
   },
   {
     title: "Drawer Slides",
     description: "Smooth, full-extension slide systems for desk bases, media storage, and utility drawers.",
-    image: storage3,
+    image: builtInHardwareSupports,
     href: "https://www.hardwareresources.com/decorative-hardware",
   },
   {
     title: "Hidden Hinges",
     description: "Concealed hinge systems for clean built-in lines with reliable soft-close movement.",
-    image: storage1,
+    image: builtInHardwareSupports,
     href: "https://www.hardwareresources.com/decorative-hardware",
   },
   {
     title: "Decorative Wood & Mouldings",
     description: "Profile and trim options that are especially relevant for custom built-ins and architectural detailing.",
-    image: storage4,
+    image: builtInDecorativeWood,
     href: "https://www.hardwareresources.com/decorative-wood",
   },
 ];

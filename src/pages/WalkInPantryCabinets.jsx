@@ -9,6 +9,7 @@ import InlineTestimonial from "@/components/shared/InlineTestimonial";
 import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import walkInPantry1 from "@/assets/images/walkinpantry1.png";
 import storage5 from "@/assets/images/storage5.webp";
+import pantryOrganizers from "@/assets/images/new-images/Walk-In-Pantry_Pantry-Organizers.jpg";
 
 const pantryBenefits = [
     "Built to ceiling height for full storage",
@@ -97,49 +98,49 @@ const featuredHardware = [
     {
         title: "Pantry Pull-Outs",
         description: "High-capacity pull-out systems for pantry zones and easy-access daily storage.",
-        image: walkInPantry1,
+        image: pantryOrganizers,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Roll-Out Shelves",
         description: "Smooth roll-out shelves for deep pantry cabinets where visibility matters.",
-        image: storage5,
+        image: pantryOrganizers,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Wire Basket Systems",
         description: "Ventilated wire basket options for produce, bulk items, and utility categories.",
-        image: walkInPantry1,
+        image: pantryOrganizers,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Drawer Organization",
         description: "Dedicated organizer layouts for pantry drawers and prep-related storage tools.",
-        image: storage5,
+        image: pantryOrganizers,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Pull-Out Storage",
         description: "Base and tall pull-out formats for easy reach and cleaner pantry workflow.",
-        image: walkInPantry1,
+        image: pantryOrganizers,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Lazy Susan",
         description: "Rotating systems that recover corner pantry storage and improve access.",
-        image: storage5,
+        image: pantryOrganizers,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Storage Baskets",
         description: "Basket-based organization for grouped goods and category-based pantry zones.",
-        image: walkInPantry1,
+        image: pantryOrganizers,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Pantry Accessories",
         description: "Accessory systems that align with Hardware Resources pantry organizer categories.",
-        image: storage5,
+        image: pantryOrganizers,
         href: "https://www.hardwareresources.com/organizers",
     },
 ];
