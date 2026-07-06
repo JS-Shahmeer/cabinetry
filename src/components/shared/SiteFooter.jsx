@@ -57,7 +57,7 @@ export default function SiteFooter() {
           <ul className="space-y-4 text-sm text-white/65">
             <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span>75 Pineview Avenue<br />North Augusta, SC 29841</span></li>
             <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span><a href="tel:8034423868" className="hover:text-white">803-442-3868</a><br /><a href="tel:7068295092" className="hover:text-white">706-829-5092 (cell)</a></span></li>
-            <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><a href="mailto:southernaccentcabinetry@gmail.com" className="hover:text-white break-all">southernaccentcabinetry@gmail.com</a></li>
+            <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><a href="mailto:ALT64L@yahoo.com" className="hover:text-white break-all">ALT64L@yahoo.com</a></li>
             <li className="flex gap-3"><Clock className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span>Mon–Fri 8:00 AM – 4:00 PM</span></li>
           </ul>
         </div>

@@ -37,7 +37,7 @@ function DesktopNavItem({ item, location, servicesOpen, setServicesOpen }) {
           {item.label} <ChevronDown className="h-3 w-3" />
         </button>
         {servicesOpen && (
-          <div className="absolute left-0 top-full mt-1 w-56 border border-white/10 bg-[#2D241E] shadow-xl">
+          <div className="absolute left-0 top-full w-56 border border-white/10 bg-[#2D241E] shadow-xl">
             {item.dropdown.map((s) => (
               <Link
                 key={s.href}
@@ -113,7 +113,7 @@ export default function SiteNavbar() {
               <Phone className="h-3.5 w-3.5" />803-442-3868
             </a>
             <Button asChild className="h-9 rounded-none bg-[#C8A977] px-4 text-[11px] uppercase tracking-[0.12em] text-[#2D241E] hover:bg-white">
-              <Link to="/consultation">Contact us</Link>
+              <Link to="/consultation">Book Consultation</Link>
             </Button>
           </div>
         </div>

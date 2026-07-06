@@ -38,7 +38,7 @@ export default function Consultation() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nProject Type: ${form.projectType}\nBudget Range: ${form.budget}\nTimeline: ${form.timeline}\nAddress/City: ${form.address}\n\nProject Details:\n${form.message}`
     );
-    window.location.href = `mailto:southernaccentcabinetry@gmail.com?subject=Consultation Request from ${form.name}&body=${body}`;
+    window.location.href = `mailto:ALT64L@yahoo.com?subject=Consultation Request from ${form.name}&body=${body}`;
     setSubmitted(true);
   };
 

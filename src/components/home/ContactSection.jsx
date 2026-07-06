@@ -10,7 +10,7 @@ export default function ContactSection({ image }) {
   const submit = (e) => {
     e.preventDefault();
     const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nProject Type: ${form.type}\n\nMessage:\n${form.message}`);
-    window.location.href = `mailto:southernaccentcabinetry@gmail.com?subject=Consultation Request&body=${body}`;
+    window.location.href = `mailto:ALT64L@yahoo.com?subject=Consultation Request&body=${body}`;
   };
   return (
     <section id="contact" className="bg-primary px-5 py-12 text-primary-foreground lg:px-8 md:py-16">
@@ -20,7 +20,7 @@ export default function ContactSection({ image }) {
           <div className="space-y-6 text-white/82">
             <p className="flex gap-4"><MapPin className="h-5 w-5 text-[#C8A977]" />75 Pineview Avenue, North Augusta, SC 29841</p>
             <p className="flex gap-4"><Phone className="h-5 w-5 text-[#C8A977]" /><span><a href="tel:8034423868">803-442-3868 office</a><br /><a href="tel:7068295092">706-829-5092 cell</a></span></p>
-            <p className="flex gap-4"><Mail className="h-5 w-5 text-[#C8A977]" /><a href="mailto:southernaccentcabinetry@gmail.com">southernaccentcabinetry@gmail.com</a></p>
+            <p className="flex gap-4"><Mail className="h-5 w-5 text-[#C8A977]" /><a href="mailto:ALT64L@yahoo.com">ALT64L@yahoo.com</a></p>
             <p className="flex gap-4"><Clock className="h-5 w-5 text-[#C8A977]" />Monday–Friday, 8:00 AM – 4:00 PM</p>
             <iframe title="Southern Accent Cabinetry map" className="h-72 w-full border-0 grayscale" loading="lazy" src="https://www.google.com/maps?q=75%20Pineview%20Avenue%2C%20North%20Augusta%2C%20SC%2029841&output=embed" />
           </div>
