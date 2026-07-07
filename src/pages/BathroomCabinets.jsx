@@ -9,7 +9,8 @@ import InlineTestimonial from "@/components/shared/InlineTestimonial";
 import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import { IMG } from "@/components/lib/siteImages";
 import bathroomOrganizers from "@/assets/images/new-images/Bathroom-Cabinets_Bathroom-Organizers.webp";
-import bathroomDecorativeHardware from "@/assets/images/new-images/Bathroom-Cabinets_Decorative Hardware.webp";
+import bathroomOrganizers2 from "@/assets/images/new-images/Bathroom-Cabinets_Decorative Hardware.webp";
+import bathroomDecorativeHardware from "@/assets/images/new-images/Bathroom-Cabinets_Bathroom-Organizers.webp";
 
 const vanityStyles = [
   { name: "Freestanding Vanity", desc: "A standalone vanity that functions as furniture. Ideal for larger bathrooms or master baths." },
@@ -29,12 +30,6 @@ const faqs = [
 
 const featuredHardware = [
   {
-    title: "Decorative Cabinet Hardware",
-    description: "Handles and knobs selected to match vanity style and finish direction.",
-    image: bathroomDecorativeHardware,
-    href: "https://www.hardwareresources.com/decorative-hardware",
-  },
-  {
     title: "Bathroom Organizers",
     description: "Keep vanity interiors cleaner and easier to use with dedicated storage accessories.",
     image: bathroomOrganizers,
@@ -42,21 +37,9 @@ const featuredHardware = [
     href: "https://www.hardwareresources.com/organizers/bathroom-organizers.html",
   },
   {
-    title: "Soft-Close Hinges",
-    description: "Quiet close movement for high-use bathroom cabinet doors.",
-    image: bathroomDecorativeHardware,
-    href: "https://www.hardwareresources.com/decorative-hardware",
-  },
-  {
-    title: "Drawer Slides",
-    description: "Smooth slide performance for vanity drawers and storage pull-outs.",
-    image: bathroomOrganizers,
-    href: "https://www.hardwareresources.com/organizers/bathroom-organizers.html",
-  },
-  {
     title: "Vanity Accessories",
     description: "Bathroom-focused accessory upgrades for day-to-day organization and convenience.",
-    image: bathroomOrganizers,
+    image: bathroomOrganizers2,
     href: "https://www.hardwareresources.com/organizers/bathroom-organizers.html",
   },
 ];
@@ -139,7 +122,7 @@ export default function BathroomCabinets() {
               ))}
             </div>
           </div>
-          <img src={IMG.storage} alt="Custom bathroom storage solutions" className="h-[460px] w-full object-cover" />
+          <img src={bathroomOrganizers} alt="Custom bathroom storage solutions" className="h-[460px] w-full object-cover" />
         </div>
       </section>
 
@@ -148,12 +131,14 @@ export default function BathroomCabinets() {
         <div className="mx-auto max-w-7xl">
           <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#8C6A43]">Recent projects</p>
           <h2 className="mb-12 font-display text-4xl leading-tight text-primary md:text-5xl">Bathroom Vanity Projects</h2>
-          <div className="grid gap-5 md:grid-cols-3">
-            {[IMG.bath, IMG.grain, IMG.workshop].map((img, i) => (
-              <div key={i} className="group overflow-hidden">
-                <img src={img} alt={`Custom bathroom vanity project ${i + 1}`} className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div className="grid gap-5 md:grid-cols-2">
+            {/* {[IMG.bath, IMG.grain, IMG.workshop].map((img, i) => ( */}
+              <div className="group overflow-hidden">
+                <img src={bathroomOrganizers} alt="" className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
               </div>
-            ))}
+              <div className="group overflow-hidden">
+                <img src={bathroomOrganizers2} alt="" className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
+              </div>
           </div>
         </div>
       </section>

@@ -15,6 +15,11 @@ import storage4 from "@/assets/images/storage4.webp";
 import storage5 from "@/assets/images/storage5.webp";
 import storage6 from "@/assets/images/storage6.webp";
 import storage7 from "@/assets/images/storage7.webp";
+import galleryAddition1 from "@/assets/images/gallery-new-additons/1.webp";
+import galleryAddition2 from "@/assets/images/gallery-new-additons/2.webp";
+import galleryAddition3 from "@/assets/images/gallery-new-additons/3.webp";
+import galleryAddition4 from "@/assets/images/gallery-new-additons/4.webp";
+import galleryAddition5 from "@/assets/images/gallery-new-additons/5.webp";
 
 const projects = [
   { id: 1, cat: "Kitchens", title: "Custom Walnut Island Kitchen", desc: "Full kitchen remodel featuring custom walnut island, white perimeter cabinets, plywood construction, and professional lacquer finish.", img: kitchen1, tags: ["Walnut", "White Paint", "Shaker Doors"] },
@@ -26,9 +31,14 @@ const projects = [
   { id: 7, cat: "Kitchens", title: "Craftsman Kitchen Remodel", desc: "Warm maple cabinetry with beaded inset doors, custom island with seating overhang, and integrated pantry storage.", img: kitchen3, tags: ["Maple", "Beaded Inset", "Island"] },
   { id: 8, cat: "Storage", title: "Corner Cabinet Organizer", desc: "Swing-out corner cabinet storage with rotating trays that bring deep-cabinet contents into full view and easy access.", img: storage5, tags: ["Corner Storage", "Swing-Out", "Kitchen Organizer"] },
   { id: 9, cat: "Before & After", title: "Kitchen Transformation", desc: "Complete kitchen transformation from outdated cabinetry to custom all-wood construction with modern shaker doors and professional finishes.", img: "https://media.base44.com/images/public/6a2c516b2e53d966d671587c/e94ded35b_generated_716697d4.png", tags: ["Before & After", "Transformation"] },
+  { id: 10, cat: "Kitchens", title: "Rustic Entertainer's Kitchen", desc: "A warm, wood-forward kitchen with generous island seating, natural grain character, and custom cabinetry designed around gathering and daily use.", img: galleryAddition1, tags: ["Rustic Wood", "Island Seating", "Custom Kitchen"] },
+  { id: 11, cat: "Kitchens", title: "Bright White Family Kitchen", desc: "A clean white kitchen with oversized island, full-height cabinetry, and an open plan layout built for cooking, serving, and everyday family traffic.", img: galleryAddition2, tags: ["White Kitchen", "Large Island", "Open Layout"] },
+  { id: 12, cat: "Built-Ins", title: "Custom Beverage Bar Built-In", desc: "A tailored serving and beverage station with upper display cabinetry, lower storage, and integrated countertop workspace for entertaining.", img: galleryAddition3, tags: ["Beverage Bar", "Built-In", "Entertaining"] },
+  { id: 13, cat: "Built-Ins", title: "Living Room Media Wall", desc: "Integrated media cabinetry and shelving designed to frame the fireplace wall with balanced storage, display space, and a built-in look.", img: galleryAddition4, tags: ["Media Wall", "Living Room", "Built-In Shelving"] },
+  { id: 14, cat: "Storage", title: "Custom Utility Room Cabinetry", desc: "Full-height painted cabinetry in a utility space with durable counters, sink integration, and practical storage built for daily household function.", img: galleryAddition5, tags: ["Utility Room", "Painted Cabinets", "Functional Storage"] },
 ];
 
-const cats = ["All", "Kitchens", "Drawers", "Pull-Out", "Storage", "Before & After"];
+const cats = ["All", "Kitchens", "Built-Ins", "Drawers", "Pull-Out", "Storage", "Before & After"];
 
 export default function Gallery() {
   const [active, setActive] = useState("All");

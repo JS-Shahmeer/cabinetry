@@ -109,8 +109,8 @@ export default function SiteNavbar() {
                 setServicesOpen={setServicesOpen}
               />
             ))}
-            <a href="tel:8034423868" className="flex items-center gap-1.5 text-[11px] tracking-[0.04em] text-white/70 hover:text-[#C8A977]">
-              <Phone className="h-3.5 w-3.5" />803-442-3868
+            <a href="tel:+18034423868" className="flex items-center gap-1.5 text-[11px] tracking-[0.04em] text-white/70 hover:text-[#C8A977]">
+              <Phone className="h-3.5 w-3.5" />+1 803-442-3868
             </a>
             <Button asChild className="h-9 rounded-none bg-[#C8A977] px-4 text-[11px] uppercase tracking-[0.12em] text-[#2D241E] hover:bg-white">
               <Link to="/consultation">Book Consultation</Link>
@@ -146,8 +146,8 @@ export default function SiteNavbar() {
               <Link key={item.label} to={item.href} className="block py-3 text-sm uppercase tracking-[0.2em] text-white/80">{item.label}</Link>
             )
           )}
-          <a href="tel:8034423868" className="mt-2 flex items-center gap-2 py-3 text-sm text-white/80">
-            <Phone className="h-4 w-4" />803-442-3868
+          <a href="tel:+18034423868" className="mt-2 flex items-center gap-2 py-3 text-sm text-white/80">
+            <Phone className="h-4 w-4" />+1 803-442-3868
           </a>
           <Link to="/consultation" className="mt-4 block bg-[#C8A977] py-3 text-center text-sm font-semibold uppercase tracking-[0.2em] text-[#2D241E]">Contact us</Link>
         </div>

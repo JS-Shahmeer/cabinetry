@@ -11,13 +11,15 @@ export default function HardwareCTASection() {
           Every cabinetry project can be customized with premium hardware, storage accessories, and organization
           solutions. We&apos;ll help you select products that match your style, improve functionality, and maximize storage.
         </p>
-        <Link
-          to="/hardware-cabinet-inserts"
+        <a
+          href="https://www.hardwareresources.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-9 inline-flex h-14 items-center gap-2 bg-[#C8A977] px-8 text-sm font-semibold uppercase tracking-[0.2em] text-[#2D241E] transition-colors hover:bg-primary hover:text-white"
         >
           Explore Hardware Collections
           <ArrowUpRight className="h-4 w-4" />
-        </Link>
+        </a>
       </div>
     </section>
   );

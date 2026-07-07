@@ -10,6 +10,11 @@ import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection
 import walkInPantry1 from "@/assets/images/walkinpantry1.png";
 import storage5 from "@/assets/images/storage5.webp";
 import pantryOrganizers from "@/assets/images/new-images/Walk-In-Pantry_Pantry-Organizers.jpg";
+import pantryOrganizers2 from "@/assets/images/storage5.webp";
+import pantryOrganizers3 from "@/assets/images/walkinpantry1.png";
+import pantryOrganizers4 from "@/assets/images/storage2.webp";
+import pantryOrganizers5 from "@/assets/images/storage4.webp";
+import pantryOrganizers6 from "@/assets/images/storage7.webp";
 
 const pantryBenefits = [
     "Built to ceiling height for full storage",
@@ -104,45 +109,45 @@ const featuredHardware = [
     {
         title: "Roll-Out Shelves",
         description: "Smooth roll-out shelves for deep pantry cabinets where visibility matters.",
-        image: pantryOrganizers,
+        image: pantryOrganizers2,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Wire Basket Systems",
         description: "Ventilated wire basket options for produce, bulk items, and utility categories.",
-        image: pantryOrganizers,
+        image: pantryOrganizers3,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Drawer Organization",
         description: "Dedicated organizer layouts for pantry drawers and prep-related storage tools.",
-        image: pantryOrganizers,
+        image: pantryOrganizers4,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Pull-Out Storage",
         description: "Base and tall pull-out formats for easy reach and cleaner pantry workflow.",
-        image: pantryOrganizers,
+        image: pantryOrganizers5,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Lazy Susan",
         description: "Rotating systems that recover corner pantry storage and improve access.",
-        image: pantryOrganizers,
+        image: pantryOrganizers6,
         href: "https://www.hardwareresources.com/organizers",
     },
-    {
-        title: "Storage Baskets",
-        description: "Basket-based organization for grouped goods and category-based pantry zones.",
-        image: pantryOrganizers,
-        href: "https://www.hardwareresources.com/organizers",
-    },
-    {
-        title: "Pantry Accessories",
-        description: "Accessory systems that align with Hardware Resources pantry organizer categories.",
-        image: pantryOrganizers,
-        href: "https://www.hardwareresources.com/organizers",
-    },
+    // {
+    //     title: "Storage Baskets",
+    //     description: "Basket-based organization for grouped goods and category-based pantry zones.",
+    //     image: pantryOrganizers,
+    //     href: "https://www.hardwareresources.com/organizers",
+    // },
+    // {
+    //     title: "Pantry Accessories",
+    //     description: "Accessory systems that align with Hardware Resources pantry organizer categories.",
+    //     image: pantryOrganizers,
+    //     href: "https://www.hardwareresources.com/organizers",
+    // },
 ];
 
 function FAQ({ q, a }) {
@@ -243,8 +248,8 @@ export default function WalkInPantryCabinets() {
                         </div>
                         <Link to="/gallery" className="hidden text-sm text-[#8C6A43] hover:text-primary md:block">View the full project gallery →</Link>
                     </div>
-                    <div className="grid gap-5 md:grid-cols-3">
-                        {[walkInPantry1, storage5, walkInPantry1].map((img, i) => (
+                    <div className="grid gap-5 md:grid-cols-2">
+                        {[walkInPantry1, storage5].map((img, i) => (
                             <div key={i} className="group relative overflow-hidden">
                                 <img src={img} alt={`Walk in pantry project ${i + 1}`} className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -260,7 +265,7 @@ export default function WalkInPantryCabinets() {
             <HardwareCarouselSection
                 eyebrow="Featured products"
                 title="Pantry Organization Hardware"
-                intro="This page focuses almost entirely on organization products aligned with Hardware Resources pantry organizers and storage systems."
+                intro="This section focuses almost entirely on organization products aligned with Hardware Resources pantry organizers and storage systems."
                 products={featuredHardware}
             />
 

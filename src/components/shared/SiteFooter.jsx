@@ -55,9 +55,9 @@ export default function SiteFooter() {
         <div>
           <h3 className="mb-5 text-xs uppercase tracking-[0.25em] text-[#C8A977]">Contact</h3>
           <ul className="space-y-4 text-sm text-white/65">
-            <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span>75 Pineview Avenue<br />North Augusta, SC 29841</span></li>
-            <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span><a href="tel:8034423868" className="hover:text-white">803-442-3868</a><br /><a href="tel:7068295092" className="hover:text-white">706-829-5092 (cell)</a></span></li>
-            <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><a href="mailto:ALT64L@yahoo.com" className="hover:text-white break-all">ALT64L@yahoo.com</a></li>
+            <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span>75 Pineview Ave, North Augusta, SC 29841, United States</span></li>
+            <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span><a href="tel:+18034423868" className="hover:text-white">+1 803-442-3868</a></span></li>
+            <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><a href="mailto:hello@southernaccentcabinetry.com" className="hover:text-white break-all">hello@southernaccentcabinetry.com</a></li>
             <li className="flex gap-3"><Clock className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span>Mon–Fri 8:00 AM – 4:00 PM</span></li>
           </ul>
         </div>

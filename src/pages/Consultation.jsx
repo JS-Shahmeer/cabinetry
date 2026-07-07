@@ -38,7 +38,7 @@ export default function Consultation() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nProject Type: ${form.projectType}\nBudget Range: ${form.budget}\nTimeline: ${form.timeline}\nAddress/City: ${form.address}\n\nProject Details:\n${form.message}`
     );
-    window.location.href = `mailto:ALT64L@yahoo.com?subject=Consultation Request from ${form.name}&body=${body}`;
+    window.location.href = `mailto:hello@southernaccentcabinetry.com?subject=Consultation Request from ${form.name}&body=${body}`;
     setSubmitted(true);
   };
 
@@ -78,10 +78,9 @@ export default function Consultation() {
             <div className="bg-primary p-7 text-white space-y-4 mb-10">
               <p className="font-display text-2xl text-[#C8A977]">Prefer to call?</p>
               <p className="text-white/75">We're happy to discuss your project by phone. Call us during business hours and we'll answer your questions directly.</p>
-              <a href="tel:8034423868" className="flex items-center gap-2 text-lg font-semibold text-white hover:text-[#C8A977] transition-colors"><Phone className="h-5 w-5" />803-442-3868</a>
-              <a href="tel:7068295092" className="flex items-center gap-2 text-white/70 hover:text-[#C8A977] transition-colors"><Phone className="h-4 w-4" />706-829-5092 (cell)</a>
+              <a href="tel:+18034423868" className="flex items-center gap-2 text-lg font-semibold text-white hover:text-[#C8A977] transition-colors"><Phone className="h-5 w-5" />+1 803-442-3868</a>
               <div className="flex items-center gap-2 text-white/60 text-sm"><Clock className="h-4 w-4" />Mon–Fri 8:00 AM – 4:00 PM</div>
-              <div className="flex items-start gap-2 text-white/60 text-sm"><MapPin className="h-4 w-4 mt-0.5" />75 Pineview Ave, North Augusta, SC 29841</div>
+              <div className="flex items-start gap-2 text-white/60 text-sm"><MapPin className="h-4 w-4 mt-0.5" />75 Pineview Ave, North Augusta, SC 29841, United States</div>
             </div>
 
             {/* Testimonials */}
@@ -105,7 +104,7 @@ export default function Consultation() {
                 </div>
                 <h2 className="font-display text-4xl text-primary mb-4">Thank You!</h2>
                 <p className="text-lg text-muted-foreground mb-3">Your consultation request has been sent. We typically respond within 1 business day.</p>
-                <p className="text-muted-foreground mb-8">You can also reach us directly at <a href="tel:8034423868" className="text-[#8C6A43] font-semibold">803-442-3868</a>.</p>
+                <p className="text-muted-foreground mb-8">You can also reach us directly at <a href="tel:+18034423868" className="text-[#8C6A43] font-semibold">+1 803-442-3868</a>.</p>
                 <Link to="/" className="inline-flex items-center gap-2 bg-primary px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground hover:bg-[#C8A977] hover:text-[#2D241E] transition-colors">
                   Return Home <ArrowRight className="h-4 w-4" />
                 </Link>

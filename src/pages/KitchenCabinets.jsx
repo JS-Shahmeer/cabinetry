@@ -15,8 +15,8 @@ import storage2 from "@/assets/images/storage2.webp";
 import storage3 from "@/assets/images/storage3.webp";
 import kitchenKnobsPulls from "@/assets/images/new-images/Kitchen-Cabinets _Cabinet-Knobs-Pulls.jpg";
 import kitchenHinges from "@/assets/images/new-images/Kitchen-Cabinets_Cabinet-Hinges.webp";
-import kitchenDrawerSlides from "@/assets/images/new-images/Kitchen-Cabinets_Drawer-Slides.jpg";
-import kitchenOrganizers from "@/assets/images/new-images/Kitchen-Cabinets_Kitchen-Organizers.webp";
+import kitchenDrawerSlides from "@/assets/images/kitchen1.webp";
+import kitchenOrganizers from "@/assets/images/kitchen2.webp";
 
 const styles = [
   { name: "Shaker", desc: "Clean recessed panel doors. Timeless in both traditional and modern kitchens." },
@@ -57,20 +57,6 @@ const featuredHardware = [
     linkLabel: "Link to Decorative Hardware",
   },
   {
-    title: "Soft-Close Hinges",
-    description: "Smooth, quiet door operation.",
-    image: kitchenHinges,
-    href: "https://www.hardwareresources.com/functional-hardware/cabinet-hinges.html",
-    linkLabel: "Link to Cabinet Hinges",
-  },
-  {
-    title: "Premium Drawer Slides",
-    description: "Soft-close full-extension drawer systems.",
-    image: kitchenDrawerSlides,
-    href: "https://www.hardwareresources.com/dovetail-drawer-boxes",
-    linkLabel: "Link to Drawer Slides",
-  },
-  {
     title: "Pull-Out Storage",
     description: "Core kitchen organization categories supported by Hardware Resources.",
     image: kitchenOrganizers,
@@ -81,7 +67,7 @@ const featuredHardware = [
   {
     title: "Drawer Organization",
     description: "Purpose-built organizer systems for everyday kitchen workflow.",
-    image: kitchenOrganizers,
+    image: kitchen1,
     bullets: ["Cutlery trays", "Utensil organizers", "Knife storage"],
     href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html",
     linkLabel: "Link to Drawer Organizers",
@@ -89,7 +75,7 @@ const featuredHardware = [
   {
     title: "Corner Cabinet Solutions",
     description: "Maximize hard-to-reach corner zones with dedicated systems.",
-    image: kitchenOrganizers,
+    image: kitchen3,
     bullets: ["Lazy Susan", "CornerMax", "Blind corner organizers"],
     href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html",
     linkLabel: "Link to Corner Organizers",
@@ -225,7 +211,7 @@ export default function KitchenCabinets() {
       <HardwareCarouselSection
         eyebrow="Featured products"
         title="Kitchen Hardware and Organization"
-        intro="This page includes the largest hardware section, covering all core kitchen categories supported by Hardware Resources."
+        intro="This section includes the largest hardware section, covering all core kitchen categories supported by Hardware Resources."
         products={featuredHardware}
       />
 

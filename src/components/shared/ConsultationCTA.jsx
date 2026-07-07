@@ -13,8 +13,8 @@ export default function ConsultationCTA({ headline = "Ready to Start Your Projec
           <Link to="/consultation" className="inline-flex items-center gap-2 bg-[#C8A977] px-10 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#2D241E] hover:bg-white transition-colors">
             Request a Consultation <ArrowRight className="h-4 w-4" />
           </Link>
-          <a href="tel:8034423868" className="inline-flex items-center gap-2 border border-white/30 px-8 py-4 text-sm text-white hover:border-[#C8A977] hover:text-[#C8A977] transition-colors">
-            <Phone className="h-4 w-4" /> 803-442-3868
+          <a href="tel:+18034423868" className="inline-flex items-center gap-2 border border-white/30 px-8 py-4 text-sm text-white hover:border-[#C8A977] hover:text-[#C8A977] transition-colors">
+            <Phone className="h-4 w-4" /> +1 803-442-3868
           </a>
         </div>
       </div>

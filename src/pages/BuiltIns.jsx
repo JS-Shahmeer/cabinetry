@@ -47,24 +47,6 @@ const featuredHardware = [
     href: "https://www.hardwareresources.com/decorative-wood",
   },
   {
-    title: "Cabinet Lighting (Future)",
-    description: "Lighting-ready planning for future integrations in entertainment centers and custom libraries.",
-    image: builtInDecorativeWood,
-    href: "https://www.hardwareresources.com/decorative-wood",
-  },
-  {
-    title: "Drawer Slides",
-    description: "Smooth, full-extension slide systems for desk bases, media storage, and utility drawers.",
-    image: builtInHardwareSupports,
-    href: "https://www.hardwareresources.com/decorative-hardware",
-  },
-  {
-    title: "Hidden Hinges",
-    description: "Concealed hinge systems for clean built-in lines with reliable soft-close movement.",
-    image: builtInHardwareSupports,
-    href: "https://www.hardwareresources.com/decorative-hardware",
-  },
-  {
     title: "Decorative Wood & Mouldings",
     description: "Profile and trim options that are especially relevant for custom built-ins and architectural detailing.",
     image: builtInDecorativeWood,
