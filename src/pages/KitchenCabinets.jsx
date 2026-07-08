@@ -8,6 +8,7 @@ import ConsultationCTA from "@/components/shared/ConsultationCTA";
 import InlineTestimonial from "@/components/shared/InlineTestimonial";
 import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import kitchen1 from "@/assets/images/kitchen1.webp";
+import kitchenOrganizers from "@/assets/images/kitchen2.webp";
 import kitchen2 from "@/assets/images/kitchen2.webp";
 import kitchen3 from "@/assets/images/kitchen3.webp";
 import storage1 from "@/assets/images/storage1.webp";
@@ -16,7 +17,8 @@ import storage3 from "@/assets/images/storage3.webp";
 import kitchenKnobsPulls from "@/assets/images/new-images/Kitchen-Cabinets _Cabinet-Knobs-Pulls.jpg";
 import kitchenHinges from "@/assets/images/new-images/Kitchen-Cabinets_Cabinet-Hinges.webp";
 import kitchenDrawerSlides from "@/assets/images/kitchen1.webp";
-import kitchenOrganizers from "@/assets/images/kitchen2.webp";
+import DrawerOrganizers from "@/assets/images/new-images/Cabinet-Inserts_Drawer-Organizers.png";
+import Pulloutstorage from "@/assets/images/storage6.webp";
 
 const styles = [
   { name: "Shaker", desc: "Clean recessed panel doors. Timeless in both traditional and modern kitchens." },
@@ -59,7 +61,7 @@ const featuredHardware = [
   {
     title: "Pull-Out Storage",
     description: "Core kitchen organization categories supported by Hardware Resources.",
-    image: kitchenOrganizers,
+    image: Pulloutstorage,
     bullets: ["Spice pull-outs", "Base cabinet pull-outs", "Waste container pull-outs"],
     href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html",
     linkLabel: "Link to Kitchen Organizers",
@@ -67,7 +69,7 @@ const featuredHardware = [
   {
     title: "Drawer Organization",
     description: "Purpose-built organizer systems for everyday kitchen workflow.",
-    image: kitchen1,
+    image: DrawerOrganizers,
     bullets: ["Cutlery trays", "Utensil organizers", "Knife storage"],
     href: "https://www.hardwareresources.com/organizers/cabinet-organizers.html",
     linkLabel: "Link to Drawer Organizers",
@@ -195,7 +197,7 @@ export default function KitchenCabinets() {
             <Link to="/gallery" className="hidden text-sm text-[#8C6A43] hover:text-primary md:block">Full gallery →</Link>
           </div>
           <div className="grid gap-5 md:grid-cols-3">
-            {[kitchen3, storage2, storage3].map((img, i) => (
+            {[kitchen3, kitchen1, kitchenOrganizers].map((img, i) => (
               <div key={i} className="group relative overflow-hidden">
                 <img src={img} alt={`Custom kitchen cabinet project ${i + 1}`} className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />

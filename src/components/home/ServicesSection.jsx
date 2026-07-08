@@ -4,6 +4,7 @@ import SectionHeader from "./SectionHeader";
 import kitchen1 from "@/assets/images/kitchen1.webp";
 import kitchen2 from "@/assets/images/kitchen2.webp";
 import storage5 from "@/assets/images/storage5.webp";
+import WalkinPantryImage from "@/assets/images/new-images/Walk-In-Pantry_Pantry-Organizers.jpg";
 import cabinetInsertsHero from "@/assets/images/cabinetinserts1.png";
 import bathroomImage from "@/assets/images/new-images/Bathroom-Cabinets_Bathroom-Organizers.webp";
 import builtInImage from "@/assets/images/new-images/Built-In-Cabinets_Decorative-Wood-Moulding.webp";
@@ -31,7 +32,7 @@ export default function ServicesSection() {
     {
       title: "Walk In Pantry Cabinets",
       desc: "Purpose-built pantry layouts with organizers and pull-outs for daily convenience.",
-      image: storage5,
+      image: WalkinPantryImage,
       href: "/walk-in-pantry-cabinets",
     },
     {

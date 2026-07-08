@@ -10,6 +10,7 @@ import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection
 import { IMG } from "@/components/lib/siteImages";
 import storage1 from "@/assets/images/storage1.webp";
 import storage2 from "@/assets/images/storage2.webp";
+import Entertainment from "@/assets/images/gallery-new-additons/4.webp";
 import storage3 from "@/assets/images/storage3.webp";
 import storage4 from "@/assets/images/storage4.webp";
 import storage5 from "@/assets/images/storage5.webp";
@@ -17,13 +18,14 @@ import storage6 from "@/assets/images/storage6.webp";
 import storage7 from "@/assets/images/storage7.webp";
 import builtInDecorativeWood from "@/assets/images/new-images/Built-In-Cabinets_Decorative-Wood-Moulding.webp";
 import builtInHardwareSupports from "@/assets/images/new-images/Built-In-Cabinets_Shelf-Supports-Decorative-Hardware.webp";
+import builtInHardwareSupportsknobsPulls from "@/assets/images/new-images/Kitchen-Cabinets _Cabinet-Knobs-Pulls.jpg";
 
 const categories = [
-  { title: "Entertainment Centers", desc: "Custom media walls built around your technology, TV alcoves, component storage, cable management, and decorative display niches in one cohesive unit.", img: storage2, features: ["TV alcove built to exact screen size", "Ventilated component storage", "Integrated cable management", "Display niches and shelving", "Matching surrounding cabinetry"] },
+  { title: "Entertainment Centers", desc: "Custom media walls built around your technology, TV alcoves, component storage, cable management, and decorative display niches in one cohesive unit.", img: Entertainment, features: ["TV alcove built to exact screen size", "Ventilated component storage", "Integrated cable management", "Display niches and shelving", "Matching surrounding cabinetry"] },
   { title: "Home Office Built Ins", desc: "A built in home office transforms a spare room or awkward nook into a productive, organized workspace that feels permanent and intentional.", img: storage3, features: ["Built in desk at custom height", "Overhead upper cabinets", "File drawer bases", "Floor to ceiling bookcase walls", "Integrated lighting pocket opportunities"] },
   { title: "Mudrooms & Entry Storage", desc: "A custom mudroom keeps every household member organized at the point of entry, lockers, benches, hooks, cubbies, and shoe storage built to your family's needs.", img: storage4, features: ["Individual family lockers", "Built in bench with base storage", "Cubby systems for shoes and bags", "Upper cabinet storage", "Hook rail integration"] },
-  { title: "Libraries & Bookshelves", desc: "Floor to ceiling library walls with integrated ladder tracks, reading nooks, and display shelving that make a bold architectural statement.", img: storage5, features: ["Floor to ceiling shelf runs", "Integrated ladder track hardware", "Adjustable shelf spacing", "Decorative crown and base trim", "Mixed open and closed storage"] },
-  { title: "Closets & Organization", desc: "Custom closet systems with dedicated zones for hanging, folding, shoes, and accessories, designed around your wardrobe, not a generic plan.", img: storage6, features: ["Double and single hang zones", "Custom drawer banks", "Shoe shelving systems", "Accessory drawers and trays", "Island or center console options"] },
+  // { title: "Libraries & Bookshelves", desc: "Floor to ceiling library walls with integrated ladder tracks, reading nooks, and display shelving that make a bold architectural statement.", img: storage5, features: ["Floor to ceiling shelf runs", "Integrated ladder track hardware", "Adjustable shelf spacing", "Decorative crown and base trim", "Mixed open and closed storage"] },
+  // { title: "Closets & Organization", desc: "Custom closet systems with dedicated zones for hanging, folding, shoes, and accessories, designed around your wardrobe, not a generic plan.", img: storage6, features: ["Double and single hang zones", "Custom drawer banks", "Shoe shelving systems", "Accessory drawers and trays", "Island or center console options"] },
 ];
 
 const faqs = [
@@ -37,7 +39,7 @@ const featuredHardware = [
   {
     title: "Decorative Hardware",
     description: "Cabinet pulls and knobs that complement built-ins in offices, libraries, and entertainment walls.",
-    image: builtInHardwareSupports,
+    image: builtInHardwareSupportsknobsPulls,
     href: "https://www.hardwareresources.com/decorative-hardware",
   },
   {

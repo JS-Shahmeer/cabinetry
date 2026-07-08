@@ -10,6 +10,7 @@ import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection
 import { IMG } from "@/components/lib/siteImages";
 import bathroomOrganizers from "@/assets/images/new-images/Bathroom-Cabinets_Bathroom-Organizers.webp";
 import bathroomOrganizers2 from "@/assets/images/new-images/Bathroom-Cabinets_Decorative Hardware.webp";
+import bathroomOrganizers3 from "@/assets/images/20.png";
 import bathroomDecorativeHardware from "@/assets/images/new-images/Bathroom-Cabinets_Bathroom-Organizers.webp";
 
 const vanityStyles = [
@@ -134,7 +135,7 @@ export default function BathroomCabinets() {
           <div className="grid gap-5 md:grid-cols-2">
             {/* {[IMG.bath, IMG.grain, IMG.workshop].map((img, i) => ( */}
               <div className="group overflow-hidden">
-                <img src={bathroomOrganizers} alt="" className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
+                <img src={bathroomOrganizers3} alt="" className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />
               </div>
               <div className="group overflow-hidden">
                 <img src={bathroomOrganizers2} alt="" className="h-80 w-full object-cover transition duration-500 group-hover:scale-105" />

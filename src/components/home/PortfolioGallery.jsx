@@ -2,9 +2,9 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 import kitchen1 from "@/assets/images/kitchen1.webp";
-import kitchen2 from "@/assets/images/kitchen2.webp";
-import kitchen3 from "@/assets/images/kitchen3.webp";
-import storage1 from "@/assets/images/storage1.webp";
+import kitchen2 from "@/assets/images/gallery-new-additons/4.webp";
+import kitchen3 from "@/assets/images/storage6.webp";
+import storage1 from "@/assets/images/new-images/Bathroom-Cabinets_Decorative Hardware.webp";
 import storage2 from "@/assets/images/storage2.webp";
 
 export default function PortfolioGallery() {

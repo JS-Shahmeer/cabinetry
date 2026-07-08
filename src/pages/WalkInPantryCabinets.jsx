@@ -9,12 +9,15 @@ import InlineTestimonial from "@/components/shared/InlineTestimonial";
 import HardwareCarouselSection from "@/components/shared/HardwareCarouselSection";
 import walkInPantry1 from "@/assets/images/walkinpantry1.png";
 import storage5 from "@/assets/images/storage5.webp";
+import storage5pantry from "@/assets/images/new-images/Walk-In-Pantry_Pantry-Organizers.jpg";
 import pantryOrganizers from "@/assets/images/new-images/Walk-In-Pantry_Pantry-Organizers.jpg";
 import pantryOrganizers2 from "@/assets/images/storage5.webp";
 import pantryOrganizers3 from "@/assets/images/walkinpantry1.png";
 import pantryOrganizers4 from "@/assets/images/storage2.webp";
 import pantryOrganizers5 from "@/assets/images/storage4.webp";
 import pantryOrganizers6 from "@/assets/images/storage7.webp";
+import DrawerOrganizers from "@/assets/images/new-images/Cabinet-Inserts_Drawer-Organizers.png";
+import Pulloutstorage from "@/assets/images/storage6.webp";
 
 const pantryBenefits = [
     "Built to ceiling height for full storage",
@@ -121,21 +124,21 @@ const featuredHardware = [
     {
         title: "Drawer Organization",
         description: "Dedicated organizer layouts for pantry drawers and prep-related storage tools.",
-        image: pantryOrganizers4,
+        image: DrawerOrganizers,
         href: "https://www.hardwareresources.com/organizers",
     },
     {
         title: "Pull-Out Storage",
         description: "Base and tall pull-out formats for easy reach and cleaner pantry workflow.",
-        image: pantryOrganizers5,
+        image: Pulloutstorage,
         href: "https://www.hardwareresources.com/organizers",
     },
-    {
-        title: "Lazy Susan",
-        description: "Rotating systems that recover corner pantry storage and improve access.",
-        image: pantryOrganizers6,
-        href: "https://www.hardwareresources.com/organizers",
-    },
+    // {
+    //     title: "Lazy Susan",
+    //     description: "Rotating systems that recover corner pantry storage and improve access.",
+    //     image: pantryOrganizers6,
+    //     href: "https://www.hardwareresources.com/organizers",
+    // },
     // {
     //     title: "Storage Baskets",
     //     description: "Basket-based organization for grouped goods and category-based pantry zones.",
@@ -187,7 +190,7 @@ export default function WalkInPantryCabinets() {
                             ))}
                         </div>
                     </div>
-                    <img src={storage5} alt="Custom walk in pantry cabinetry" className="h-[500px] w-full object-cover" />
+                    <img src={storage5pantry} alt="Custom walk in pantry cabinetry" className="h-[500px] w-full object-cover" />
                 </div>
             </section>
 
