@@ -33,16 +33,17 @@ const projects = [
   { id: 9, cat: "Before & After", title: "Kitchen Transformation", desc: "Complete kitchen transformation from outdated cabinetry to custom all-wood construction with modern shaker doors and professional finishes.", img: "https://media.base44.com/images/public/6a2c516b2e53d966d671587c/e94ded35b_generated_716697d4.png", tags: ["Before & After", "Transformation"] },
   { id: 10, cat: "Kitchens", title: "Rustic Entertainer's Kitchen", desc: "A warm, wood-forward kitchen with generous island seating, natural grain character, and custom cabinetry designed around gathering and daily use.", img: galleryAddition1, tags: ["Rustic Wood", "Island Seating", "Custom Kitchen"] },
   { id: 11, cat: "Kitchens", title: "Bright White Family Kitchen", desc: "A clean white kitchen with oversized island, full-height cabinetry, and an open plan layout built for cooking, serving, and everyday family traffic.", img: galleryAddition2, tags: ["White Kitchen", "Large Island", "Open Layout"] },
-  {
-    id: 12,
-    cat: "Built-Ins",
-    title: "Functional Prep Station",
-    desc: "A versatile prep station featuring custom cabinetry, integrated sink, dishwasher, and ample storage—designed to maximize efficiency while maintaining a clean, modern look.",
-    img: galleryAddition3,
-    tags: ["Prep Station", "Custom Cabinetry", "Built-In"]
-  },
-  { id: 13, cat: "Built-Ins", title: "Living Room Media Wall", desc: "Integrated media cabinetry and shelving designed to frame the fireplace wall with balanced storage, display space, and a built-in look.", img: galleryAddition4, tags: ["Media Wall", "Living Room", "Built-In Shelving"] },
-  { id: 14, cat: "Storage", title: "Custom Utility Room Cabinetry", desc: "Full-height painted cabinetry in a utility space with durable counters, sink integration, and practical storage built for daily household function.", img: galleryAddition5, tags: ["Utility Room", "Painted Cabinets", "Functional Storage"] },
+  
+  { id: 12, cat: "Built-Ins", title: "Living Room Media Wall", desc: "Integrated media cabinetry and shelving designed to frame the fireplace wall with balanced storage, display space, and a built-in look.", img: galleryAddition4, tags: ["Media Wall", "Living Room", "Built-In Shelving"] },
+  { id: 13, cat: "Storage", title: "Custom Utility Room Cabinetry", desc: "Full-height painted cabinetry in a utility space with durable counters, sink integration, and practical storage built for daily household function.", img: galleryAddition5, tags: ["Utility Room", "Painted Cabinets", "Functional Storage"] },
+  // {
+  //   id: 14,
+  //   cat: "Built-Ins",
+  //   title: "Functional Prep Station",
+  //   desc: "A versatile prep station featuring custom cabinetry, integrated sink, dishwasher, and ample storage—designed to maximize efficiency while maintaining a clean, modern look.",
+  //   img: galleryAddition3,
+  //   tags: ["Prep Station", "Custom Cabinetry", "Built-In"]
+  // },
 ];
 
 const cats = ["All", "Kitchens", "Built-Ins", "Drawers", "Pull-Out", "Storage", "Before & After"];

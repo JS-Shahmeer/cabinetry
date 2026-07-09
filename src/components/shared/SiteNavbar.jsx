@@ -81,7 +81,7 @@ export default function SiteNavbar() {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled || !isHome ? "bg-[#2D241E] shadow-lg" : "bg-[#2D241E]/80 backdrop-blur-xl"} border-b border-white/10`}>
-      <nav className="px-5 lg:px-8 max-w-[1600px] mx-auto">
+      <nav className="px-3 lg:px-8 max-w-[1600px] mx-auto">
         <div className="hidden py-2.5 items-center lg:grid lg:grid-cols-[1fr_auto_1fr]">
           <div className="flex items-center gap-6">
             {leftNav.map((item) => (
@@ -96,7 +96,7 @@ export default function SiteNavbar() {
           </div>
 
           <Link to="/" className="mx-10 block text-center text-primary-foreground">
-            <img src={logo} alt="Southern Accent Cabinetry" className="mx-auto h-24 w-auto object-contain" />
+            <img src={logo} alt="Southern Accent Cabinetry" className="mx-auto h-28 w-auto object-contain" />
           </Link>
 
           <div className="flex items-center justify-end gap-5">
@@ -118,9 +118,9 @@ export default function SiteNavbar() {
           </div>
         </div>
 
-        <div className="relative flex h-[80px] items-center justify-end lg:hidden">
+        <div className="relative flex h-[95px] items-center justify-end lg:hidden">
           <Link to="/" className="absolute left-4 block text-primary-foreground">
-            <img src={logo} alt="Southern Accent Cabinetry" className="h-16 w-auto object-contain" />
+            <img src={logo} alt="Southern Accent Cabinetry" className="h-20 w-auto object-contain" />
           </Link>
 
           <button className="text-white" onClick={() => setOpen(!open)} aria-label="Toggle menu">
@@ -130,14 +130,14 @@ export default function SiteNavbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-white/10 bg-[#2D241E] px-5 py-5 lg:hidden">
+        <div className="border-t border-white/10 bg-[#2D241E] px-5 py-3 lg:hidden">
           {/* <Link to="/" className="mb-5 block border-b border-white/10 pb-5 text-center">
             <img src={logo} alt="Southern Accent Cabinetry" className="mx-auto h-16 w-auto object-contain" />
           </Link> */}
           {navLinks.map((item) =>
             item.dropdown ? (
               <div key={item.label}>
-                <p className="block py-3 text-sm uppercase tracking-[0.2em] text-white/60">{item.label}</p>
+                <p className="block py-1.5 text-sm uppercase tracking-[0.2em] text-white/60">{item.label}</p>
                 {item.dropdown.map((s) => (
                   <Link key={s.href} to={s.href} className="block py-2 pl-4 text-sm text-white/80">— {s.label}</Link>
                 ))}
@@ -149,7 +149,7 @@ export default function SiteNavbar() {
           <a href="tel:+18034423868" className="mt-2 flex items-center gap-2 py-3 text-sm text-white/80">
             <Phone className="h-4 w-4" />+1 803-442-3868
           </a>
-          <Link to="/consultation" className="mt-4 block bg-[#C8A977] py-3 text-center text-sm font-semibold uppercase tracking-[0.2em] text-[#2D241E]">Contact us</Link>
+          <Link to="/consultation" className="mt-2 block bg-[#C8A977] py-3 text-center text-sm font-semibold uppercase tracking-[0.2em] text-[#2D241E]">Contact us</Link>
         </div>
       )}
     </header>
