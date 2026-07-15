@@ -96,7 +96,7 @@ export default function SiteNavbar() {
           </div>
 
           <Link to="/" className="mx-10 block text-center text-primary-foreground">
-            <img src={logo} alt="Southern Accent Cabinetry" className="mx-auto h-28 w-auto object-contain" />
+            <img src={logo} alt="Southern Accent Cabinetry" className="mx-auto h-32 w-auto object-contain" />
           </Link>
 
           <div className="flex items-center justify-end gap-5">
@@ -118,9 +118,9 @@ export default function SiteNavbar() {
           </div>
         </div>
 
-        <div className="relative flex h-[95px] items-center justify-end lg:hidden">
+        <div className="relative flex h-[120px] items-center justify-end lg:hidden">
           <Link to="/" className="absolute left-4 block text-primary-foreground">
-            <img src={logo} alt="Southern Accent Cabinetry" className="h-20 w-auto object-contain" />
+            <img src={logo} alt="Southern Accent Cabinetry" className="h-24 w-auto object-contain" />
           </Link>
 
           <button className="text-white" onClick={() => setOpen(!open)} aria-label="Toggle menu">
