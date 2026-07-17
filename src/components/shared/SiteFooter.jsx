@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Globe, Camera, MessageCircle } from "lucide-react";
 import logo from "@/assets/images/logo.png";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const quickLinks = [
   { label: "About Us", href: "/about" },
@@ -56,16 +57,31 @@ export default function SiteFooter() {
           <h3 className="mb-5 text-xs uppercase tracking-[0.25em] text-[#C8A977]">Contact</h3>
           <ul className="space-y-4 text-sm text-white/65">
             <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span>75 Pineview Ave, North Augusta, SC 29841, United States</span></li>
-            <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span><a href="tel:+18034423868" className="hover:text-white">+1 803-442-3868</a></span></li>
+            <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span><a href="tel:+18034423868" className="hover:text-white">Office: +1 803-442-3868</a></span></li>
+            <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span><a href="tel:+18034423245" className="hover:text-white">Fax: 803-442-3245</a></span></li>
+            <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span><a href="tel:+17068295092" className="hover:text-white">Cell: 706-829-5092</a></span></li>
             <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><a href="mailto:hello@southernaccentcabinetry.com" className="hover:text-white break-all">hello@southernaccentcabinetry.com</a></li>
             <li className="flex gap-3"><Clock className="h-4 w-4 mt-0.5 shrink-0 text-[#C8A977]" /><span>Mon–Fri 8:00 AM – 4:00 PM</span></li>
+            <li className="pt-2">
+              <div className="flex flex-wrap gap-3">
+                <a href="https://www.facebook.com/SouthernAccentCabinetryLLC" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-3 hover:border-[#C8A977] hover:text-[#C8A977] transition-colors">
+                  <FaFacebook className="h-4 w-4" />
+                </a>
+                <a href="https://www.tiktok.com/@cabinetryllc" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-3 hover:border-[#C8A977] hover:text-[#C8A977] transition-colors">
+                  <FaTiktok className="h-4 w-4" />
+                  
+                </a>
+                <a href="https://www.instagram.com/southern.accentcabinetry/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-3 hover:border-[#C8A977] hover:text-[#C8A977] transition-colors">
+                  <FaInstagram className="h-4 w-4" />
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
 
       <div className="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-6 flex flex-col gap-2 md:flex-row md:justify-between text-xs text-white/40">
         <p>© {year} Southern Accent Cabinetry, LLC. All rights reserved.</p>
-        <p>Serving North Augusta, SC · Augusta, GA · Aiken, SC and surrounding areas</p>
       </div>
     </footer>
   );
